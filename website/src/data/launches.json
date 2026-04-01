@@ -1,0 +1,119 @@
+[
+    {
+        "brand": "Tata",
+        "model": "Tata Sierra EV",
+        "price": "₹20.00 - ₹25.00 Lakhs",
+        "powertrain": "Electric (EV)",
+        "launch_date": "Mid 2026",
+        "image": "https://cdn-s3.autocarindia.com/Tata/sierra-ev/500_6273.jpg?w=384&q=75",
+        "source": "Autocar India"
+    },
+    {
+        "brand": "Tata",
+        "model": "Tata Avinya",
+        "price": "₹35.00 - ₹40.00 Lakhs",
+        "powertrain": "Electric (EV)",
+        "launch_date": "2027",
+        "image": "https://cdn-s3.autocarindia.com/Tata/avinya/Image-1.jpg?w=384&q=75",
+        "source": "Autocar India"
+    },
+    {
+        "brand": "Tata",
+        "model": "Tata New Nexon",
+        "price": "₹8.00 - ₹17.00 Lakhs",
+        "powertrain": "Petrol",
+        "launch_date": "2027",
+        "image": "https://cdn-s3.autocarindia.com/assets/suv_fallback.png?w=384&q=75",
+        "source": "Autocar India"
+    },
+    {
+        "brand": "Mahindra",
+        "model": "Mahindra Scorpio N facelift",
+        "price": "₹14.00 - ₹26.00 Lakhs",
+        "powertrain": "Diesel",
+        "launch_date": "Early 2026",
+        "image": "https://cdn-s3.autocarindia.com/assets/suv_fallback.png?w=384&q=75",
+        "source": "Autocar India"
+    },
+    {
+        "brand": "Mahindra",
+        "model": "Mahindra Vision S",
+        "price": "₹7.50 - ₹13.00 Lakhs",
+        "powertrain": "Electric (EV)",
+        "launch_date": "2027",
+        "image": "https://cdn-s3.autocarindia.com/Mahindra/vision-s/Mahindra-Vision-S-Front_View.jpg?w=384&q=75",
+        "source": "Autocar India"
+    },
+    {
+        "brand": "Mahindra",
+        "model": "Mahindra Vision X",
+        "price": "₹25.00 - ₹30.00 Lakhs",
+        "powertrain": "Electric (EV)",
+        "launch_date": "2027",
+        "image": "https://cdn-s3.autocarindia.com/Mahindra/vision-x/Mahindra-Vision-X-Front-Left-three-quarter.jpg?w=384&q=75",
+        "source": "Autocar India"
+    },
+    {
+        "brand": "Maruti",
+        "model": "Maruti Suzuki e Vitara",
+        "price": "₹18.00 - ₹23.00 Lakhs",
+        "powertrain": "Electric (EV)",
+        "launch_date": "Early 2026",
+        "image": "https://cdn-s3.autocarindia.com/Maruti-Suzuki/e-vitara/SUZUKI%20EVITARA%20ILLYA%20VERPRAET%20AUTOCAR%20SUZUKI%20UK%20%C2%A9JORDAN%20BUTTERS-6.jpg?w=384&q=75",
+        "source": "Autocar India"
+    },
+    {
+        "brand": "Maruti",
+        "model": "Maruti Suzuki Brezza facelift",
+        "price": "₹8.50 - ₹13.10 Lakhs",
+        "powertrain": "Petrol",
+        "launch_date": "2026",
+        "image": "https://cdn-s3.autocarindia.com/assets/suv_fallback.png?w=384&q=75",
+        "source": "Autocar India"
+    },
+    {
+        "brand": "BYD",
+        "model": "BYD Atto 2",
+        "price": "₹18.00 - ₹25.00 Lakhs",
+        "powertrain": "Electric (EV)",
+        "launch_date": "TBA",
+        "image": "https://cdn-s3.autocarindia.com/BYD/atto-2/BYD-introduces-compact-ATTO-2-SUV-in-Europe-2.jpg?w=384&q=75",
+        "source": "Autocar India"
+    },
+    {
+        "brand": "Hyundai",
+        "model": "Hyundai Bayon",
+        "price": "₹8.00 - ₹15.00 Lakhs",
+        "powertrain": "Petrol",
+        "launch_date": "Late 2026",
+        "image": "https://cdn-s3.autocarindia.com/hyundai/bayon/Bayon_5.jpg?w=384&q=75",
+        "source": "Autocar India"
+    },
+    {
+        "brand": "Hyundai",
+        "model": "Hyundai Exter Facelift",
+        "price": "₹6.00 - ₹10.00 Lakhs",
+        "powertrain": "Petrol",
+        "launch_date": "Mid 2026",
+        "image": "https://cdn-s3.autocarindia.com/assets/suv_fallback.png?w=384&q=75",
+        "source": "Autocar India"
+    },
+    {
+        "brand": "Hyundai",
+        "model": "Hyundai New Creta",
+        "price": "₹11.30 - ₹20.50 Lakhs",
+        "powertrain": "Petrol",
+        "launch_date": "2027",
+        "image": "https://cdn-s3.autocarindia.com/assets/suv_fallback.png?w=384&q=75",
+        "source": "Autocar India"
+    },
+    {
+        "brand": "Hyundai",
+        "model": "Hyundai Verna facelift",
+        "price": "₹11.00 - ₹18.00 Lakhs",
+        "powertrain": "Petrol",
+        "launch_date": "Mid 2026",
+        "image": "https://cdn-s3.autocarindia.com/assets/sedan_fallback.png?w=384&q=75",
+        "source": "Autocar India"
+    }
+]
