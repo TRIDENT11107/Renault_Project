@@ -1,0 +1,937 @@
+{
+    "Automated Manual Transmission": {
+        "Cost Optimization": [
+            {
+                "title": "Surrogate-based automated hyperparameter optimization for expensive automotive crashworthiness optimization",
+                "url": "https://doi.org/10.1007/s00158-025-03989-x",
+                "year": 2025,
+                "impact_score": 5,
+                "abstract": "Abstract\n          In the automotive industry, solving crashworthiness optimization problems efficiently is crucial to minimize time and cost investment on expensive function evaluations, e.g., using simulation runs. Nonetheless, automotive crashworthiness optimization is time-consuming and challenging even with domain knowledge, due to the fact that crash problems are typically high-dimensional, nonlinear, and discontinuous. In this work, we propose an automated hyperparameter optimization (HPO) approach for expensive black-box optimization (BBO) problems that can assist practitioners to solve automotive crash problems efficiently using optimally configured optimization algorithms. Precisely, the landscape characteristics of BBO problems, e.g., quantified using exploratory landscape analysis (ELA), are analyzed to identify cheap-to-evaluate representative functions that belong to the same optimization problem class. Based on these representative functions, algorithm configurations can be optimally fine-tuned at a relatively low computational cost. Using three optimization algorithms, consisting of modular covariance matrix adaptation evolutionary strategy (CMA-ES), modular differential evolution (DE), and Bayesian optimization (BO), we evaluate the potential of our approach based on the black-box optimization benchmarking (BBOB) suite and an automotive side crash problem. Since the optimal configurations identified using our approach can perform well on most of the BBOB functions, we believe that our approach can generalize well to BBO problems with similar optimization complexity. For the automotive side crash problem, the BO configuration fine-tuned using our approach can outperform the default BO configuration as well as the conventional response surface method (RSM), in terms of the best-found-solution and convergence speed. Furthermore, better solutions can be identified using the proposed approach compared to successive RSM (SRSM), when dealing with complex crash functions and a limited function evaluation budget. With appropriate extensions, we are confident that our approach can be applied to other real-world expensive BBO domains beyond automotive crashworthiness optimization."
+            },
+            {
+                "title": "Design. Implementation, and Control of a Novel Automated Manual Transmission (AMT) System for Manual Transmission Bicycles",
+                "url": "https://doi.org/10.1109/asyu62119.2024.10756970",
+                "year": 2024,
+                "impact_score": 2,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "A Cost Effective Solution to an Automated Valet Parking System",
+                "url": "https://doi.org/10.1007/s12239-024-00031-9",
+                "year": 2024,
+                "impact_score": 2,
+                "abstract": "AbstractAutomated Valet Parking Systems (AVPS) relieve the driver of the entire parking process. Many of the systems known today rely on a combination of automotive sensors with sensors of the infrastructure. For this purpose, parking facilities are equipped with comprehensive sensor technology to support the vehicles in environment sensing and route planning. This approach is comparatively expensive which is why many parking operators don\u2019t provide that technology to their customers. This paper proposes a lean AVPS system architecture that requires minimal effort to adapt the infrastructure. At the same time, state-of-the-art vehicle technology is used to make AVPS more profitable overall. At the beginning, an overview will be given describing the state of the art of AVPS. Subsequently, requirements for the AVPS will be elaborated, whereby the system can be designed and implemented in the following. Finally, the presentation of simulation results shows that one doesn\u2019t have to extend the infrastructure with sensors to develop a safe and reliable AVPS."
+            },
+            {
+                "title": "The Impact of GA Optimization Model under the Constraint of Maximum Inventory on the Logistics Cost Control of Automotive Parts Production in the Factory",
+                "url": "https://doi.org/10.31449/inf.v48i11.5959",
+                "year": null,
+                "impact_score": 1,
+                "abstract": "The logistics of parts entering the factory is an important component of the cost source for manufacturing plants. How to efficiently transport is the key for its enterprises to achieve low-cost control. To address this issue, this study proposed a path planning model based on an improved genetic algorithm. Firstly, a circular distribution model suitable for component transportation logistics was selected, and then constraints such as maximum inventory at the line edge were introduced for design. The basic design of the genetic algorithm was also carried out. Subsequently, three neighborhood structures were introduced for optimization to address the convergence speed and other issues of the algorithm. In response to the demand fluctuation phenomenon in practical applications, a new coding design was carried out. To verify the impact of the model on inbound logistics costs, simulation experiments were conducted on the MATLAB platform. The results showed that the designed algorithm had an average decrease of 14% in total mileage compared to single objective nonlinear models and collaborative network models, while the total cost had decreased by 26.58%. In summary, the improved genetic algorithm model designed in this study has a positive impact on the cost control of inbound logistics."
+            },
+            {
+                "title": "A Monograph on Cost Optimization in Automotive Manufacturing: A Value Engineering and Functional Analysis Approach",
+                "url": "https://doi.org/10.70593/978-93-7185-712-3",
+                "year": 2025,
+                "impact_score": 0,
+                "abstract": "In Chapter 1, we describe our problem and deliver the aim and objective of the project. Also give a justification why we must choose this problem.  The main aim of this project is to reduce the chain case cost by 21% in two - wheeler products using value analysis, value engineering and functional analysis. We will provide our month wise plan of work to achieve the target in this chapter.\n\nIn Chapter 2, we will elaborate the details of the organization TVS Group. The products of the TVS group, process, facilities which are available in the organization will be discussed in this chapter.  We will provide the organization structure, its business profile, achievements, awards and the milestone of this organization will be brief out in this chapter.\n\nIn Chapter 3, we will state the problem and discuss in detail the importance of the problem. It is necessary to retain the contribution of the product without increasing the selling product to sustain the market share. We need to reduce the cost of a chain case to retain the vehicle contribution is our problem. Also, we will describe the reputation of a chain case before making the cost reduction approach. So we will clearly explain the scope, historical perspective, cause and effect and criticality of the problem in this chapter.\n\n In Chapter 4, we are going to discuss a few topics which are most relevant to this project. Also, we have surveyed the results from various research articles and case studies in the precise topic. Literature on automotive industry and need for cost reduction, value analysis and value engineering, functional analysis, metal to plastic conversion and Qc techniques.\n\nIn Chapter 5, the vast amount of data will be gathering which are related to our project.  Data gathering will be useful for two main purposes of process improvement and cost-effective solution. Finally, it will guide us to find the best cost-effective solution for process optimization, material selection across a different area of application.     \n\nIn Chapter 6, we will discuss the choice of techniques which is required for our problem discussion. We will discuss the function analysis with VE, function tree, function cost and finite element analysis. We will provide an analysis of plastic and metal. Also, we elaborate the scope of our in this project.\n\nIn Chapter 7, we will give a justification that plastic will be the better one than metal. Again, we will choose the type of plastic that will suit for the chain case more and will help to reduce the manufacturing cost of chain case.  Design of chain case is very important, so we will be attempted to redesign the already existed chain case.  For improvising the design, we redesign the internal design clearance, and we provide a procedure to overcome the chain cover rubbing also. Not only these changes, also we will improve the moulding design, gating design, cooling system and cooling fixture.  We explain in detail about the process, packing improvement and validate the concept and selection.\n\nIn Chapter 8, we discuss the overall results of this project in a different scenario. Validate the test result in the initial stage and try to find the fault in the process. After identifying the fault, we adopt the necessary actions and rectify the problem. At the end of the stage, we implement the changes in the vehicle and test the output. If everything is working properly, then we will get approval and validate the status of the product. The expected time, cost, effort, and overall expected benefits are described to validate the result.  Mainly it focuses on the achievement from this project and methodology adopted during its implementation.\n\nIn Chapter 9, we will summarise the project, discuss the limitation and gains of our study. Also deliberate the scope of future wok in this chapter."
+            }
+        ],
+        "Fuel Economy": [
+            {
+                "title": "Estimation of assorted injection schedules on hydrogen-diesel dual fuel and reactivity controlled compression ignition modes in a medium duty automotive engine",
+                "url": "https://doi.org/10.1016/j.fuel.2023.130435",
+                "year": 2024,
+                "impact_score": 13,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Simulational energy analyses of different transmission (automated manuel transmission vs continuously variable transmission) selection effects on fuel cell hybrid electric vehicles\u2019 energetic performance",
+                "url": "https://doi.org/10.1016/j.ijhydene.2024.02.360",
+                "year": 2024,
+                "impact_score": 7,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Design. Implementation, and Control of a Novel Automated Manual Transmission (AMT) System for Manual Transmission Bicycles",
+                "url": "https://doi.org/10.1109/asyu62119.2024.10756970",
+                "year": 2024,
+                "impact_score": 2,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Research on Fuel Economy of Hydro-Mechanical Continuously Variable Transmission Rotary-Tilling Tractor",
+                "url": "https://doi.org/10.3390/en18061490",
+                "year": null,
+                "impact_score": 1,
+                "abstract": "In response to the absence of an effective variable speed control strategy for tractors equipped with hydro-mechanical continuously variable transmission (HMCVT) during rotary-tillage operations, this study investigates the power transfer and fuel economy characteristics of the rotary-tilling tractor during operation. A dynamic analysis of the rotary-tilling tractor is conducted, and a dynamic model for the rotary-tilling tractor is developed. This model comprehensively incorporates factors such as the transmission efficiency of the HMCVT, the horizontal cutting force of the rotary tillage, and the torque coupling relationships between the various transmission subsystems and utilizes a backward modeling approach with dual inputs: walking load and rotary-tillage load. Based on the measured data of the effective fuel consumption rate from 64 engine groups within the study, a BP neural network model of the engine\u2019s fuel characteristics is developed. Furthermore, it is proposed that fuel consumption per kilometer of rotary-tillage operation be used to characterize the fuel economy of the rotary-tilling tractor. The results demonstrate that the increase in forward speed concurrently enhances both the productivity and fuel economy of the rotary-tilling tractor. This finding provides a theoretical foundation for developing a variable speed control strategy for the rotary-tilling tractor."
+            },
+            {
+                "title": "Turning Perceptions into Design Recommendations: Exploring the Implications of Multisensory Stimuli on Alertness and Mood in Manual and Partially Automated Vehicles",
+                "url": "https://doi.org/10.1145/3744335.3756854",
+                "year": 2025,
+                "impact_score": 1,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            }
+        ],
+        "Lightweighting": [
+            {
+                "title": "Advanced Biaxial Cruciform Testing at the NIST Center for Automotive Lightweighting",
+                "url": "https://doi.org/10.1007/978-3-319-00876-9_34",
+                "year": 2025,
+                "impact_score": 13,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Design. Implementation, and Control of a Novel Automated Manual Transmission (AMT) System for Manual Transmission Bicycles",
+                "url": "https://doi.org/10.1109/asyu62119.2024.10756970",
+                "year": 2024,
+                "impact_score": 2,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Battery Electric Vehicle Lightweighting Strategies: Addressing Energy Consumption and Range Anxiety",
+                "url": "https://doi.org/10.15282/ijame.21.4.2024.4.0905",
+                "year": null,
+                "impact_score": 2,
+                "abstract": "In general, an internal combustion engine vehicle is still the convention in personal and commercial transport, but due to its high use stage CO2 emission, a shift is occurring in propulsion methods, and the use of battery electric vehicles (BEV) will become the new norm. BEV\u2019s curb weight is, in general, greater than that of a conventional fuelled vehicle (CFV) for equivalent classes. Consequently, it is questionable that the level of BEV\u2019s energy consumption is acceptable. The aim of this paper is to compare the mass induced energy consumption of CFV and BEV. The expectation is that the comparative study of energy consumption between CFV and BEV will provide insight for proposing a strategy to determine the extent to which lightweighting can be introduced to a BEV. Encouragingly, less exhaustive energy consumption can help by reducing range anxiety by increasing BEV range, resolving one issue facing a BEV. With a typical road condition for hilly and flat roads, various drive cycles are also taken into consideration, and the energy consumption profiles for CFV and BEV can be determined. The vehicle model involved using the MATLAB/Simulink software underpinned by longitudinal vehicle dynamic methods. The idea is to determine the amount of lightweighting of various components of a BEV through an iterative process based on energy consumption profiles. As a function of mass reduction, for comparative energy expenditure, the results showed that a range of 28 to 36% reduction in BEV mass was achieved, which in turn can increase the driving range by 36.4 to 46.8%."
+            },
+            {
+                "title": "Lightweighting an automotive fuel tank through formability analysis",
+                "url": "https://doi.org/10.1177/09544070241287810",
+                "year": 2025,
+                "impact_score": 2,
+                "abstract": "For lightweighting automotive sheet metal parts, it is important to use the right grade/material with the minimum possible initial blank thickness in the forming processes. Fuel tank is one of the most critical sheet metal parts in automobiles due to its complex shape and large depth. In this work, a simulation-based approach has been employed to study the feasibility of lightweighting an automotive fuel tank (for two wheelers) by reducing blank thickness and changing steel grade. Formability analysis has been carried out using numerical simulations of a 0.8\u2009mm thick sheet of Extra Deep Drawing (EDD) steel which is being used to manufacture the fuel tanks. Simulations have been performed to find out the minimum initial sheet thickness which can be formed successfully without failure or excessive thinning. From the predictions of formability, thinning, and strain distributions in the formed parts, it has been found that the weight of the part can be reduced by 12.5% by reducing the initial thickness from 0.80 to 0.70\u2009mm. To reduce the thickness further, simulations have also been carried out by changing the grade from EDD steel to Interstitial Free (IF) steel which has superior drawability than EDD steel. It has been found that the blank thickness can be further reduced to 0.65\u2009mm in the case of IF steel which is expected to result in 19.0% reduction in the weight of the component. The predictions have been validated by the actual press trials in the industry with reduced sheet thickness. The predicted strain distribution and thinning in the formed parts have also been validated with the experimental press trails. In addition to the weight reduction, the proposed change in thickness and grade would lead to a reduction of 16.5% and 4.0%, respectively, in the raw material cost of the fuel tank."
+            },
+            {
+                "title": "Revolutionizing automotive lightweighting: a comparative analysis of electromagnetic free forming for clamped sheets",
+                "url": "https://doi.org/10.38152/bjtv7n4-046",
+                "year": null,
+                "impact_score": 1,
+                "abstract": "Reducing vehicle mass is a critical strategy for enhancing fuel economy and meeting the growing demand for lightweight materials in the automotive industry. Aluminum alloys have emerged as a promising solution due to their low density, but their limited formability compared to steel poses significant challenges. Electromagnetic Forming (EMF) is a high-speed process capable of significantly improving the formability of aluminum alloy sheets, enabling the production of lightweight structural components for automotive applications. This process operates within microseconds, which provides a unique advantage for rapid and efficient manufacturing. The numerical modeling of EMF plays a pivotal role in understanding the complex physics and deformation behaviors associated with this process. This research investigates the numerical modeling of EMF for various aluminum alloy sheets using a spiral coil. The results provide insights into the distinctive deformation behaviors and performance variations of different alloys under identical process conditions, which offers valuable guidance for material selection and process optimization in automotive applications."
+            }
+        ],
+        "Friction Reduction": [
+            {
+                "title": "Optimal Gear Shift Control of Two-Speed Dual-Clutch Transmission in Electric Vehicle for Smoothness and Friction Loss Reduction",
+                "url": "https://doi.org/10.1007/s12239-024-00073-z",
+                "year": 2024,
+                "impact_score": 5,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Aerospace and Automotive Marvels Applications of Friction Stir Processed Hybrid Composites",
+                "url": "https://doi.org/10.4018/979-8-3693-3993-0.ch014",
+                "year": 2024,
+                "impact_score": 4,
+                "abstract": "The innovative development in materials engineering known as friction stir processed hybrid composites (FSPHC) provides unmatched performance and versatility for applications in the automotive and aerospace industries. The revolutionary potential of FSPHC in several industries is examined in this abstract. Through the technique of friction stir processing, FSPHC is able to combine the distinct qualities of several materials to create a material that is superior in terms of strength, lightweight design, and durability. FSPHC are being used more and more in the aerospace industry in structural parts like wing panels and fuselages, where their better mechanical qualities help to increase performance and fuel efficiency. Similar to this, FSPHC are essential to light weighting techniques in the automobile sector, which improve vehicle performance, fuel efficiency, and sustainability."
+            },
+            {
+                "title": "Experimental Comparison of Manufacturing Parameters in Automotive Friction Materials",
+                "url": "https://doi.org/10.30939/ijastech..1425382",
+                "year": null,
+                "impact_score": 3,
+                "abstract": "<jats:p xml:lang=\"en\">In this study, a fixed automotive friction material content was determined and the mechanical and tribological effects of manufacturing parameters on friction materials were investigated. Parameters; pre-forming time (1-3-5 min) and pre-forming pressure (8-10-12 MPa), hot pressing time (5-10-15 min) hot pressing pressure (8-10-12 MPa) and hot pressing temperature (125-150-175 \u00b0C), curing time (4-8-12 h) and curing temperature (120-150-180 \u00b0C) were determined. The friction test of the produced samples was carried out under 0.551 MPa pressure and 7 m/s rotation speed for 90 min. In addition, the average COF, friction stability, specific wear rate, density and hardness values of the samples were calculated. According to the results obtained, the average COF value increased as the pre-forming time and pressure increased. The lowest specific wear rate among all specimens was calculated as 7.622x10-6 cm3/Nm in PFP-12 specimen. With the increase in hot pressing time, the tribological properties of friction materials improved. The highest friction stability among all samples was calculated as 79.42% in the HPT-15 sample. Although there was an increase in the average COF value with increasing hot pressing pressure and temperature, the specific wear rates increased in these parameters. The highest average COF value among all samples was obtained in the CT-12 sample with a value of 0.553. The specific wear rate increased with the increase in curing time and temperature. The highest specific wear rate among all samples was calculated 10,743x10-6 cm3/Nm in the CTe-180 sample. Finally, it has been suggested that 3 min for pre-forming time, 12 MPa for pre-forming pressure; 15 min for hot pressing time, 12 MPa for hot pressing pressure, and 150\u00b0C for hot pressing temperature; and a curing time of 8 h and curing temperature of 150 \u00b0C may be sufficient."
+            },
+            {
+                "title": "Design. Implementation, and Control of a Novel Automated Manual Transmission (AMT) System for Manual Transmission Bicycles",
+                "url": "https://doi.org/10.1109/asyu62119.2024.10756970",
+                "year": 2024,
+                "impact_score": 2,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Road Friction Adaptive Lateral Control of Automated Vehicles with Differential Braking",
+                "url": "https://doi.org/10.1007/978-3-031-70392-8_16",
+                "year": 2024,
+                "impact_score": 1,
+                "abstract": "AbstractDifferential braking offers a promising approach to ensure lateral control of automated vehicles in the event of steering actuator failure. Braking interventions induce longitudinal forces on the wheel, which influence the vehicle\u2019s yaw motion and thus enable lateral control along a given trajectory. Within the scope of this paper, a road friction adaptive system for lateral vehicle control by differential braking on a dry, wet, snow- and ice-covered road is derived simulatively. The investigated friction coefficient adaption is implemented by a variable path planning and calculated on the basis of an estimated road friction coefficient. The driving situation considered is based on the severe lane-change maneuver according to ISO 3888-2 for the investigation of vehicle dynamics and road-holding ability. The limitation of the trajectory results from the maximum yaw rate and expands the trajectory\u2019s length for the different road friction coefficients."
+            }
+        ],
+        "Thermal Efficiency": [
+            {
+                "title": "Improving heat recovery: A unified one-dimensional radial turbine model for CO2 reduction and efficiency gains in automotive organic Rankine cycles",
+                "url": "https://doi.org/10.1016/j.applthermaleng.2025.125816",
+                "year": 2025,
+                "impact_score": 5,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Design. Implementation, and Control of a Novel Automated Manual Transmission (AMT) System for Manual Transmission Bicycles",
+                "url": "https://doi.org/10.1109/asyu62119.2024.10756970",
+                "year": 2024,
+                "impact_score": 2,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Analysis of Efficiency Improvement for a Two-Speed Transmission Electric Vehicle",
+                "url": "https://doi.org/10.14775/ksmpe.2024.23.3.015",
+                "year": 2024,
+                "impact_score": 2,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Key Technologies to 50% Brake Thermal Efficiency for Gasoline Engine of Passenger Car",
+                "url": "https://doi.org/10.53941/ijamm.2025.100001",
+                "year": null,
+                "impact_score": 1,
+                "abstract": "Review\nKey Technologies to 50% Brake Thermal Efficiency for Gasoline Engine of Passenger Car\n\nXinke Miao, Bingxin Xu, Jun Deng,\u00a0and Liguang Li *\n\n\nSchool of Automotive Studies, Tongji University, Shanghai 201804, China\n* Correspondence: liguang@tongji.edu.cn\n\n\nReceived: 13 August 2024; Revised: 6 December 2024; Accepted: 17 December 2024; Published: 20 January 2025\n\nAbstract:\u00a0As fuel consumption and emissions regulations become increasingly stringent, various advanced strategies have been proposed to achieve higher efficiency in internal combustion engines. This paper reviews the advancements in thermal efficiency of gasoline engines and analyzes the key technological methods to achieve over 50% brake thermal efficiency (BTE). The technological routes proposed for high-efficiency gasoline engine are primarily focused on high compression ratios and lean combustion combined with novel combustion technologies. Supporting technologies mainly include Atkinson/Miller cycles, intake boosting, exhaust gas re-circulation (EGR), water injection, thermal barrier coatings, friction reduction, structural optimization, and combustion diagnostics and control."
+            },
+            {
+                "title": "Turning Perceptions into Design Recommendations: Exploring the Implications of Multisensory Stimuli on Alertness and Mood in Manual and Partially Automated Vehicles",
+                "url": "https://doi.org/10.1145/3744335.3756854",
+                "year": 2025,
+                "impact_score": 1,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            }
+        ]
+    },
+    "Small Displacement Engine": {
+        "Cost Optimization": [
+            {
+                "title": "Optimization of Diethyl Ether-Modified Sesame Biodiesel\u2013Diesel Fuel Blends for Enhanced Engine Performance and Emission Mitigation",
+                "url": "https://doi.org/10.30939/ijastech..1724235",
+                "year": null,
+                "impact_score": 3,
+                "abstract": "<jats:p xml:lang=\"en\">Different alternative fuels are being tested in place of diesel fuels in order to address the growing need for energy. Because it has many of the same physical and chemical characteristics as diesel, biodiesel is the most significant of these fuels. But there are drawbacks to biodiesels as well, namely their high density and viscosity. This study includes adding three different volumes of diethyl ether (DEE) to a diesel/sesame oil biodiesel blend in order to address these issues with biodiesel. The effect of this addition on emissions and engine performance was then investigated experimentally. The study was conducted at a constant speed of 3000 rpm and six different loads were used. In the optimization study, engine load and DEE were determined as input parameters, while carbon monoxide (CO), carbon dioxide (CO2), nitrogen oxides (NOx), hydrocarbons (HC), and brake specific fuel consumption (BSFC) were determined as output factors. The findings of the study showed that all output parameters had correlation coefficients (R2) above 90%. The error rates between the actual experimental results and the results obtained from the RSM prediction, ranging from 1.61% to 9.06%, are all less than 10%. In the optimization study conducted to obtain the lowest BSFC value and minimum emissions, the optimum operating parameters were found to be 4 mL DEE and 1.3 kW load. Under these loads, BSFC was found to be 699.99 g/kWh, NOx 487.33 ppm, CO2 5.05%, HC 16.78 ppm and CO 0.0394%. Compared to the diesel/sesame oil biodiesel blend with 4 ml of diethyl ether, when only diesel/sesame biodiesel was used under 1.3 kW load, CO emissions increased by 18.27% and unburned HC emissions increased by 37.84%. On the other hand, NO\u2093 emissions decreased by 18.89% and CO\u2082 emissions decreased by 2.05%. In addition, the BSFC value increased by 18.51%."
+            },
+            {
+                "title": "Research on Engine Characteristics Based on Cyclic Mode Variable Displacement Control",
+                "url": "https://doi.org/10.1007/s12239-024-00106-7",
+                "year": 2024,
+                "impact_score": 2,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Engine and Emission Performance of Renewable Fuels in a Small Displacement Turbocharged Diesel Engine",
+                "url": "https://doi.org/10.3390/en17246443",
+                "year": null,
+                "impact_score": 2,
+                "abstract": "A reduction in emissions in transportation is paramount to achieve full compliance with the European Union\u2019s 2050 targets. In this framework, a great boost to the carbon dioxide (CO2) emission of internal combustion engines fueled by petroleum-derived fuels can be obtained through the adoption of biomass-derived fuels that can be employed in conventional series production engine vehicles. This paper presents the results of an experimental activity on a two-cylinder turbocharged common rail diesel engine, whose main application is for urban mobility, fueled with renewable fuels: Neste MY Renewable Diesel and Eni HVOlution. Aimed at analyzing the potential employment of renewable fuels as drop-in alternative fuels, the engine performance and emissions were investigated under fixed settings of the injection parameters, in the complete range of the engine speed, at the full pedal position. The comparison with the data from tests in which the engine was fueled with fossil diesel highlighted minimal differences in the performance outcomes, while significant differences were observed in the emissions results. In more detail, there were reduced carbon monoxide (CO) emissions (HVO produced using Ecofining\u2122 technology retained better behavior in relation to HVO produced using the NEXBTL\u2122 technology), advantages in hydrocarbon (HC) and nitrogen oxide (NOx) emissions (HVO from NESTE Oil performed better than HVO from ENI), a decrease in the particle mass and number emissions (HVO from Ecofining\u2122 technology was characterized by a lower particle number and court mean diameter in relation to HVO from the NEXBTL\u2122 technology). The results highlight that an optimization of the engine settings based on the specific properties of each fuel could allow us to take full advantage of these fuels in reducing the environmental impact of cars."
+            },
+            {
+                "title": "Nonlinear controller design for automotive engine speed regulation utilizing electric eel foraging optimization",
+                "url": "https://doi.org/10.1007/s40435-025-01597-7",
+                "year": 2025,
+                "impact_score": 2,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Optimization of Metallic Catalytic Converters to Reduce CO Emissions and Increase Engine Power",
+                "url": "https://doi.org/10.31603/ae.11587",
+                "year": null,
+                "impact_score": 2,
+                "abstract": "Metallic catalytic converter (MCC) is one of the technologies widely applied to motorcycle exhausts which aims to improve exhaust emission to be more environmentally friendly. However, even though many studies have been conducted, optimal design has not been achieved compared to other designs. Through this research, the Taguchi method is proposed as an alternative method to find the optimum parameters of MCC. The Taguchi method was chosen because of its ability to find a robust combination of parameters. There are four MCC parameters used as inputs while each parameter consists of three levels, thus the design used is the L18 Orthogonal Array (OA) which each combination is tested on three types of motorcycles, namely Moped, Automatic, and Sports. The signal-to-noise ratio (S/N) was adopted as one of the quality indicators of each combination. The optimization results showed that the best MCC design to reduce CO emissions is STD PGM. However, the optimum CO design can be used as an alternative because the difference in the S/N ratio is only -0.372. Meanwhile, the optimum CO design has another advantage over the STD PGM, namely the S/N value of the power ratio which tends to be higher with a difference of 5.037 compared to the STD PGM. Then, the best MCC design capable of increasing power is the optimum power design. The optimum power design has a superior S/N ratio with a difference of 5.404. In terms of emission, the optimum power design tends to be lower by a difference of -1.875 compared to the STD PGM."
+            }
+        ],
+        "Fuel Economy": [
+            {
+                "title": "Effect of pilot fuel quantity and fuel injection pressure on combustion, performance and emission characteristics of an automotive diesel engine",
+                "url": "https://doi.org/10.1016/j.ijft.2024.100570",
+                "year": 2024,
+                "impact_score": 18,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Estimation of assorted injection schedules on hydrogen-diesel dual fuel and reactivity controlled compression ignition modes in a medium duty automotive engine",
+                "url": "https://doi.org/10.1016/j.fuel.2023.130435",
+                "year": 2024,
+                "impact_score": 13,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Synergistic effect of physicochemical and geometric techniques for initiating detonation in a small-size pulse detonation engine",
+                "url": "https://doi.org/10.1016/j.fuel.2024.132227",
+                "year": 2024,
+                "impact_score": 6,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Investigation of diesel pre-injection effects on combustion and emission characteristics in a small-displacement ammonia/diesel dual-fuel engine",
+                "url": "https://doi.org/10.1016/j.fuproc.2025.108301",
+                "year": 2025,
+                "impact_score": 5,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Multiparametric Methods for Rapid Classification of Diesel Fuel Quality Used in Automotive Engine Systems",
+                "url": "https://doi.org/10.3390/en17164189",
+                "year": null,
+                "impact_score": 5,
+                "abstract": "Fuels should behave appropriately in all sections of the engine system: the engine, fuel delivery system, and tank. Fuel quality can be linked to the following three crucial areas: performance, fitness for current use, and stability. Classical methods of diesel fuel examination mostly rely on the absolute value measurement of one specific parameter while stabilizing outside conditions. In contrast, multiparametric methods depend on simultaneously measuring a set of parameters. Therefore, multiparametric methods open the possibility of intriguing new examinations and classifications of diesel fuel quality while raising specific issues relating to the instrumentation and construction of sensing devices. This paper presents a review, based on the published literature and the authors\u2019 research, of the current state-of-the-art multiparametric methods for rapid diesel fuel quality classification and related instrumentation, systematizing the various types of methods from the point of view of the principles of their operation. The main conclusion is that different measuring procedures use similar methods of data processing. Moreover, the heavy, costly, and complex devices that enable standard examinations can be converted to simpler devices in the future, whose cost of use is significantly lower. However, to achieve this, progress in electronic devices is required."
+            }
+        ],
+        "Lightweighting": [
+            {
+                "title": "Advanced Biaxial Cruciform Testing at the NIST Center for Automotive Lightweighting",
+                "url": "https://doi.org/10.1007/978-3-319-00876-9_34",
+                "year": 2025,
+                "impact_score": 13,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Increasing Efficiency and Reducing Emissions in a Small Displacement Gasoline Engine With Hydrogen-Enriched Natural Gas",
+                "url": "https://doi.org/10.1115/1.4067362",
+                "year": 2025,
+                "impact_score": 4,
+                "abstract": "Abstract\n               There is currently a gap in the available literature on retrofitting engines with less-advanced control systems to run on hydrogen-enriched natural gas. Potential advantages of hydrogen-enriched natural gas in these engines may not be realized without altering parameters such as spark-timing, exhaust gas recirculation, or the air/fuel ratio. However, in such engines, changes in spark-timing and exhaust gas recycle are often cost-prohibitive, leaving equivalence ratio adjustments as one of the few remaining viable operational strategies. In this study, a small-displacement (319 cc), naturally aspirated, single-cylinder gasoline engine without spark-timing control was converted to run on a 10 vol% blend of hydrogen-enriched natural gas. Stoichiometric operation improved thermal efficiency, fuel consumption, and total hydrocarbon emissions, but higher NOx emissions resulted. Despite no spark-timing control, lean-burn operation at an equivalence ratio of 0.7 was found to maintain performance improvements while also lowering emissions: fuel consumption was lowered versus the methane base case by 11%, and NOx and hydrocarbon emissions were both decreased by approximately 70% below the base case. This study concludes that in a scenario even without spark-timing control, the addition of 10 vol% hydrogen can improve power, emissions, and efficiency of a spark-ignited natural gas engine, which serves as a proof-of-concept that even fairly simple, small-displacement engines can benefit from switching from gasoline to hydrogen-enriched natural gas operation."
+            },
+            {
+                "title": "Research on Engine Characteristics Based on Cyclic Mode Variable Displacement Control",
+                "url": "https://doi.org/10.1007/s12239-024-00106-7",
+                "year": 2024,
+                "impact_score": 2,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Engine and Emission Performance of Renewable Fuels in a Small Displacement Turbocharged Diesel Engine",
+                "url": "https://doi.org/10.3390/en17246443",
+                "year": null,
+                "impact_score": 2,
+                "abstract": "A reduction in emissions in transportation is paramount to achieve full compliance with the European Union\u2019s 2050 targets. In this framework, a great boost to the carbon dioxide (CO2) emission of internal combustion engines fueled by petroleum-derived fuels can be obtained through the adoption of biomass-derived fuels that can be employed in conventional series production engine vehicles. This paper presents the results of an experimental activity on a two-cylinder turbocharged common rail diesel engine, whose main application is for urban mobility, fueled with renewable fuels: Neste MY Renewable Diesel and Eni HVOlution. Aimed at analyzing the potential employment of renewable fuels as drop-in alternative fuels, the engine performance and emissions were investigated under fixed settings of the injection parameters, in the complete range of the engine speed, at the full pedal position. The comparison with the data from tests in which the engine was fueled with fossil diesel highlighted minimal differences in the performance outcomes, while significant differences were observed in the emissions results. In more detail, there were reduced carbon monoxide (CO) emissions (HVO produced using Ecofining\u2122 technology retained better behavior in relation to HVO produced using the NEXBTL\u2122 technology), advantages in hydrocarbon (HC) and nitrogen oxide (NOx) emissions (HVO from NESTE Oil performed better than HVO from ENI), a decrease in the particle mass and number emissions (HVO from Ecofining\u2122 technology was characterized by a lower particle number and court mean diameter in relation to HVO from the NEXBTL\u2122 technology). The results highlight that an optimization of the engine settings based on the specific properties of each fuel could allow us to take full advantage of these fuels in reducing the environmental impact of cars."
+            },
+            {
+                "title": "Battery Electric Vehicle Lightweighting Strategies: Addressing Energy Consumption and Range Anxiety",
+                "url": "https://doi.org/10.15282/ijame.21.4.2024.4.0905",
+                "year": null,
+                "impact_score": 2,
+                "abstract": "In general, an internal combustion engine vehicle is still the convention in personal and commercial transport, but due to its high use stage CO2 emission, a shift is occurring in propulsion methods, and the use of battery electric vehicles (BEV) will become the new norm. BEV\u2019s curb weight is, in general, greater than that of a conventional fuelled vehicle (CFV) for equivalent classes. Consequently, it is questionable that the level of BEV\u2019s energy consumption is acceptable. The aim of this paper is to compare the mass induced energy consumption of CFV and BEV. The expectation is that the comparative study of energy consumption between CFV and BEV will provide insight for proposing a strategy to determine the extent to which lightweighting can be introduced to a BEV. Encouragingly, less exhaustive energy consumption can help by reducing range anxiety by increasing BEV range, resolving one issue facing a BEV. With a typical road condition for hilly and flat roads, various drive cycles are also taken into consideration, and the energy consumption profiles for CFV and BEV can be determined. The vehicle model involved using the MATLAB/Simulink software underpinned by longitudinal vehicle dynamic methods. The idea is to determine the amount of lightweighting of various components of a BEV through an iterative process based on energy consumption profiles. As a function of mass reduction, for comparative energy expenditure, the results showed that a range of 28 to 36% reduction in BEV mass was achieved, which in turn can increase the driving range by 36.4 to 46.8%."
+            }
+        ],
+        "Friction Reduction": [
+            {
+                "title": "Optimal Gear Shift Control of Two-Speed Dual-Clutch Transmission in Electric Vehicle for Smoothness and Friction Loss Reduction",
+                "url": "https://doi.org/10.1007/s12239-024-00073-z",
+                "year": 2024,
+                "impact_score": 5,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Engine Optimization Model for Accurate Prediction of Friction Model in Marine Dual-Fuel Engine",
+                "url": "https://doi.org/10.3390/a18070415",
+                "year": null,
+                "impact_score": 4,
+                "abstract": "This paper presents an innovative engine optimization model integrated with a friction fitting tool to enhance the accuracy of computed performance for a marine dual-fuel engine. The focus is on determining the terms of the Chen\u2013Flynn correlation\u2014an empirical engine friction model\u2014to improve the precision of friction and performance predictions. The developed model employs WAVE, a 1D engine simulation software, coupled with a nonlinear optimizer to identify the optimal configuration of key parameters, including the turbocharger, injection system, combustion behavior, and friction model. The optimization procedure maximizes the air\u2013fuel ratio (AFR) within the engine while adhering to various predefined constraints. The model is applied to four operational points along the propeller curve, with the optimized results subsequently integrated into a friction fitting tool. This tool predicts the terms of the Chen\u2013Flynn correlation through an updated procedure, achieving highly accurate results with a coefficient of determination (R2) value of 99.88%, eliminating the need for experimental testing. The optimized friction model provides a reliable foundation for future studies and applications, enabling precise friction predictions across various engine types and fuel compositions."
+            },
+            {
+                "title": "An experimental study on aging effects of fuel-cut events including sound optimized torque reduction on modern three-way catalysts",
+                "url": "https://doi.org/10.1007/s41104-024-00144-4",
+                "year": null,
+                "impact_score": 3,
+                "abstract": "AbstractContinuously increasing country-specific emission standards for passenger vehicles demand additional development steps in complex exhaust gas aftertreatment systems for a more effective reduction of harmful gases. The efficiency of the aftertreatment system declines over its lifecycle due to specific load profiles and other boundary conditions, resulting in increasing emissions over vehicle mileage. As a result, the durability of the exhaust system becomes more important. Fuel cut is an intended, temporary interruption of the fuel supply of modern combustion engines of passenger cars to reduce fuel consumption and emissions. During this fuel reduction event, unconsumed oxygen of rich and cool fresh air is introduced to the combustion chamber and to the exhaust system. Besides a catalyst cool down, oxidation effects are provoked by enhanced oxygen reactions processes within the catalyst\u2019s washcoat and surface layers. In this publication, specific aging cycles with a variation of fuel-cut programs were examined on their effects on a modified modern eight-cylinder turbo-charged engine, especially on their oxidation effects correlating to catalyst aging. Light-off curves and conversion heat maps were used to evaluate possible damaging impacts of fuel-cut events on the aging behavior of the catalyst systems. Results indicate that higher frequency of fuel-cut events results in a reduced catalyst conversion efficiency, whereas thermal sintering might be reduced due to overall lower temperature load. Temporary oxidation processes on catalyst\u2019s surfaces occur only in a short timespan after changing the air fuel ratio to lean, resulting in a weaker thermal sintering during longer fuel-cut events. Sound optimized torque reduction functions, used in sports cars for a better drivability and powertrain response, exhibit a stronger aging influence due to additional thermal shock effects on the catalysts front face, as demonstrated via optical infrared sensor technology during catalyst aging cycles on the modified engine bench setup. A theoretical calculation of aging processes as a combination of thermal sintering by Arrhenius equation as well as oxidation process is discussed to describe an aging classification induced via oxidation processes. Additional physisorption measurements of different catalyst probes support the results which indicate the direction of future experimental approaches."
+            },
+            {
+                "title": "Research on Engine Characteristics Based on Cyclic Mode Variable Displacement Control",
+                "url": "https://doi.org/10.1007/s12239-024-00106-7",
+                "year": 2024,
+                "impact_score": 2,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Engine and Emission Performance of Renewable Fuels in a Small Displacement Turbocharged Diesel Engine",
+                "url": "https://doi.org/10.3390/en17246443",
+                "year": null,
+                "impact_score": 2,
+                "abstract": "A reduction in emissions in transportation is paramount to achieve full compliance with the European Union\u2019s 2050 targets. In this framework, a great boost to the carbon dioxide (CO2) emission of internal combustion engines fueled by petroleum-derived fuels can be obtained through the adoption of biomass-derived fuels that can be employed in conventional series production engine vehicles. This paper presents the results of an experimental activity on a two-cylinder turbocharged common rail diesel engine, whose main application is for urban mobility, fueled with renewable fuels: Neste MY Renewable Diesel and Eni HVOlution. Aimed at analyzing the potential employment of renewable fuels as drop-in alternative fuels, the engine performance and emissions were investigated under fixed settings of the injection parameters, in the complete range of the engine speed, at the full pedal position. The comparison with the data from tests in which the engine was fueled with fossil diesel highlighted minimal differences in the performance outcomes, while significant differences were observed in the emissions results. In more detail, there were reduced carbon monoxide (CO) emissions (HVO produced using Ecofining\u2122 technology retained better behavior in relation to HVO produced using the NEXBTL\u2122 technology), advantages in hydrocarbon (HC) and nitrogen oxide (NOx) emissions (HVO from NESTE Oil performed better than HVO from ENI), a decrease in the particle mass and number emissions (HVO from Ecofining\u2122 technology was characterized by a lower particle number and court mean diameter in relation to HVO from the NEXBTL\u2122 technology). The results highlight that an optimization of the engine settings based on the specific properties of each fuel could allow us to take full advantage of these fuels in reducing the environmental impact of cars."
+            }
+        ],
+        "Thermal Efficiency": [
+            {
+                "title": "Research on the effects of ammonia substitution on the combustion and emission characteristics of a small displacement ammonia-diesel dual fuel engine",
+                "url": "https://doi.org/10.1016/j.applthermaleng.2025.127048",
+                "year": 2025,
+                "impact_score": 11,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Increasing Efficiency and Reducing Emissions in a Small Displacement Gasoline Engine With Hydrogen-Enriched Natural Gas",
+                "url": "https://doi.org/10.1115/1.4067362",
+                "year": 2025,
+                "impact_score": 4,
+                "abstract": "Abstract\n               There is currently a gap in the available literature on retrofitting engines with less-advanced control systems to run on hydrogen-enriched natural gas. Potential advantages of hydrogen-enriched natural gas in these engines may not be realized without altering parameters such as spark-timing, exhaust gas recirculation, or the air/fuel ratio. However, in such engines, changes in spark-timing and exhaust gas recycle are often cost-prohibitive, leaving equivalence ratio adjustments as one of the few remaining viable operational strategies. In this study, a small-displacement (319 cc), naturally aspirated, single-cylinder gasoline engine without spark-timing control was converted to run on a 10 vol% blend of hydrogen-enriched natural gas. Stoichiometric operation improved thermal efficiency, fuel consumption, and total hydrocarbon emissions, but higher NOx emissions resulted. Despite no spark-timing control, lean-burn operation at an equivalence ratio of 0.7 was found to maintain performance improvements while also lowering emissions: fuel consumption was lowered versus the methane base case by 11%, and NOx and hydrocarbon emissions were both decreased by approximately 70% below the base case. This study concludes that in a scenario even without spark-timing control, the addition of 10 vol% hydrogen can improve power, emissions, and efficiency of a spark-ignited natural gas engine, which serves as a proof-of-concept that even fairly simple, small-displacement engines can benefit from switching from gasoline to hydrogen-enriched natural gas operation."
+            },
+            {
+                "title": "Research on Engine Characteristics Based on Cyclic Mode Variable Displacement Control",
+                "url": "https://doi.org/10.1007/s12239-024-00106-7",
+                "year": 2024,
+                "impact_score": 2,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Engine and Emission Performance of Renewable Fuels in a Small Displacement Turbocharged Diesel Engine",
+                "url": "https://doi.org/10.3390/en17246443",
+                "year": null,
+                "impact_score": 2,
+                "abstract": "A reduction in emissions in transportation is paramount to achieve full compliance with the European Union\u2019s 2050 targets. In this framework, a great boost to the carbon dioxide (CO2) emission of internal combustion engines fueled by petroleum-derived fuels can be obtained through the adoption of biomass-derived fuels that can be employed in conventional series production engine vehicles. This paper presents the results of an experimental activity on a two-cylinder turbocharged common rail diesel engine, whose main application is for urban mobility, fueled with renewable fuels: Neste MY Renewable Diesel and Eni HVOlution. Aimed at analyzing the potential employment of renewable fuels as drop-in alternative fuels, the engine performance and emissions were investigated under fixed settings of the injection parameters, in the complete range of the engine speed, at the full pedal position. The comparison with the data from tests in which the engine was fueled with fossil diesel highlighted minimal differences in the performance outcomes, while significant differences were observed in the emissions results. In more detail, there were reduced carbon monoxide (CO) emissions (HVO produced using Ecofining\u2122 technology retained better behavior in relation to HVO produced using the NEXBTL\u2122 technology), advantages in hydrocarbon (HC) and nitrogen oxide (NOx) emissions (HVO from NESTE Oil performed better than HVO from ENI), a decrease in the particle mass and number emissions (HVO from Ecofining\u2122 technology was characterized by a lower particle number and court mean diameter in relation to HVO from the NEXBTL\u2122 technology). The results highlight that an optimization of the engine settings based on the specific properties of each fuel could allow us to take full advantage of these fuels in reducing the environmental impact of cars."
+            },
+            {
+                "title": "Development of an electrochemically approximated simulation model and a hardware substitution cell approach for thermal management battery system tests",
+                "url": "https://doi.org/10.1007/s41104-024-00146-2",
+                "year": null,
+                "impact_score": 2,
+                "abstract": "Abstract\n                  Battery tests require a high degree of safety-related preparation and constant monitoring of the operating parameters to guarantee the smooth running of tests without incidents or exceptional events such as a thermal runaway. As the handling before, during, and especially after the tests is relatively complex and sometimes just as costly, it is important to reduce these risks and costs as well as to find an alternative to conventional battery tests. Such an approach is being developed by the T-cell project of the Institute of Thermodynamics and Sustainable Propulsion Systems at Graz University of Technology, founded by the Austrian Research Promotion Agency (FFG). A thermal substitution cell, which resembles a battery cell on the outside, is to reflect the surface temperature distribution of a chemical cell without there being any cell chemistry inside the substitution cell. Rather, the interior should not be part of the observation and the thermal requirements should be provided by an internal heating option. Such a measurement approach requires, among other things, a control and regulation unit, without which it would not be possible to transfer the thermal behavior of a battery cell to the substitution cell. Together with the electronic structure of the substitution cell and a circuit environment including a battery simulation model established at a later date, this control/regulation module forms an overall package that considerably facilitates investigations at cell, module, and pack level by substitution of a certain amount of cells using system symmetry advantages. A suitable simulation model was constructed and parameterized for this purpose from an electrochemical and a thermal network. As a first step, the data, which were partly determined empirically but also derived from real cell measurements in the literature, were adapted to the requirements of the simulation environment, so that the real cell used could be simulated thermally in principle. The simulation observations represent the state of the art of the model and are continuously improved by measurements carried out at the institute, thus building up the overall system in more detail."
+            }
+        ]
+    },
+    "Battery Thermal Management": {
+        "Cost Optimization": [
+            {
+                "title": "Design of a PCM-based thermal management system for cylindrical Li-ion battery using topology optimization",
+                "url": "https://doi.org/10.1016/j.applthermaleng.2025.126143",
+                "year": 2025,
+                "impact_score": 33,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Multi-objective optimization of cold plate with spoiler for battery thermal management system using whale optimization algorithm",
+                "url": "https://doi.org/10.1016/j.applthermaleng.2024.124974",
+                "year": 2025,
+                "impact_score": 12,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Structural optimization and battery temperature prediction of battery thermal management system based on machine learning",
+                "url": "https://doi.org/10.1016/j.csite.2024.105207",
+                "year": 2024,
+                "impact_score": 11,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Utilization of battery analysis methodologies for parametrization and enhancement of an electrochemically approximated simulation model approach for thermal management battery system tests",
+                "url": "https://doi.org/10.1007/s41104-025-00150-0",
+                "year": null,
+                "impact_score": 2,
+                "abstract": "Abstract\n                  \n                    The exact investigation of the thermal management of battery electric vehicles requires the precise simulation of the processes inside the cell. However, there is a broad trade-off between the complexity and manageability of the simulative methodology on the one hand and the necessary spatial accuracy of the simulation result on the other, which is why complex models that describe the cell down to local current densities and diffusion processes are not suitable for this overriding purpose. An equivalent circuit model proves to be the most suitable for the desired objectives. This model reproduces the electrochemical processes by means of an equivalent circuit and simulates the thermal processes through the cell layers to the surface by means of a thermal network model. Such an approach was pursued in the previous work, using various literature references and empirically obtained parameters (Lorbeck and Fruehwirth in Autom Engine Technol 10:2\n                    <jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"10.1007/s41104-024-00146-2\" ext-link-type=\"doi\">https://doi.org/10.1007/s41104-024-00146-2</jats:ext-link>\n                    , 2025). This approach proved to be pragmatic, but it quickly became clear that a more precise method to parameterize the equivalent circuit diagram was required for this specific application. The improved parametrization includes the measurement of several cells in terms of electrochemical impedance spectroscopy and open-circuit voltage, which are carried out and processed on site. This method makes it possible to achieve an adapted parametrization relatively quickly by measuring other cells. After carrying out these measurements and integrating the new parameters into the simulation methodology, a validation against measured cells and against the previously used simulation methodology (literature-based, partly empirically determined parameters) could be carried out. Despite the additional effort involved in measuring the cells, the validation speaks in favor of introducing the new simulation methodology, as the accuracy of the predictions and in particular the simulation of transient parts within the cycles has improved. This means that in future, it will be possible to better illuminate and understand various areas of thermal and electrical cell stress that are of interest for the observations. A further validation, which compares different real driving measurements and testbed cycles on cell level with the according simulation data, is planned for 2025 and is currently being analyzed as part of ongoing investigations.\n                  "
+            },
+            {
+                "title": "Optimization design of battery thermal management system with honeycomb-shaped channels based on artificial hummingbird algorithm",
+                "url": "https://doi.org/10.1016/j.applthermaleng.2025.126765",
+                "year": 2025,
+                "impact_score": 2,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            }
+        ],
+        "Fuel Economy": [
+            {
+                "title": "A novel hybrid liquid-cooled battery thermal management system for electric vehicles in highway fuel-economy condition",
+                "url": "https://doi.org/10.1016/j.est.2024.111195",
+                "year": 2024,
+                "impact_score": 43,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Fuel-Cell Thermal Management Strategies for Enhanced Performance: Review of Fuel-Cell Thermal Management in Proton-Exchange Membrane Fuel Cells (PEMFCs) and Solid-Oxide Fuel Cells (SOFCs)",
+                "url": "https://doi.org/10.3390/hydrogen6030065",
+                "year": null,
+                "impact_score": 11,
+                "abstract": "Effective thermal management is crucial for optimizing the performance, efficiency, and durability of fuel-cell technologies, including proton-exchange membrane fuel cells (PEMFCs) and solid-oxide fuel cells (SOFCs). The operation of fuel cells involves complex heat generation mechanisms, primarily driven by electrochemical reactions, which can lead to significant energy loss as heat. This review examines the specific heat generation sources and challenges associated with different fuel-cell types, highlighting the critical importance of effective thermal management strategies. Key techniques for thermal regulation, including active and passive cooling systems, are examined in detail. Active cooling methods like liquid cooling and air cooling are effective in dissipating excess heat, while passive methods leverage advanced materials and optimized designs to enhance natural heat dissipation. Furthermore, innovative heat recovery systems are explored, demonstrating their potential to enhance overall energy efficiency by capturing and repurposing waste heat. The integration of machine learning techniques has arisen as a promising avenue for advancing temperature control in fuel cells. Reinforcement learning, deep learning algorithms, and support vector machines, along with artificial neural networks, are discussed in the context of their application in managing temperature dynamics and optimizing thermal performance. The review also emphasizes the significance of real-time monitoring, as well as adaptive control strategies to respond effectively to the dynamic operating conditions of fuel cells. Understanding and applying these thermal management strategies is essential for the successful commercialization of fuel cells across various sectors, ranging from automotive to stationary power generation. With the growing demand for clean energy solutions, progress in thermal management techniques will be crucial in improving the dependability and practicality of fuel-cell systems."
+            },
+            {
+                "title": "Development of Hydrogen Fuel Cell\u2013Battery Hybrid Multicopter System Thermal Management and Power Management System Based on AMESim",
+                "url": "https://doi.org/10.3390/en18020447",
+                "year": null,
+                "impact_score": 6,
+                "abstract": "Urban Air Mobility (UAM) is gaining attention as a solution to urban population growth and air pollution. Hydrogen fuel cells are applied to overcome the limitations of battery-based UAM, utilizing a PEMFC (Polymer Electrolyte Membrane Fuel Cell) with batteries in a hybrid system to enhance responsiveness. Power management improves efficiency through effective power distribution under varying loads, while thermal management maintains optimal stack temperatures to prevent degradation. This study developed a hydrogen fuel cell\u2013battery hybrid multicopter system using AMESim, consisting of a 138 kW fuel cell stack, 60 kW battery, DC\u2013DC converters, and thrust motors. A rule-based power management system was implemented to define power distribution strategies based on SOC and load demand. The system\u2019s operating range was designed to allocate power according to battery SOC and load variations. For an initial SOC of 45%, the power management system distributed power for flight, and the results showed that the state machine control system reduced hydrogen consumption by 5.85% and parasitic energy by 1.63% compared to the rule-based system."
+            },
+            {
+                "title": "An optimal power management strategy for enhancing fuel economy in fuel cell-battery hybrid electric vehicles",
+                "url": "https://doi.org/10.1016/j.epsr.2025.112256",
+                "year": 2026,
+                "impact_score": 6,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Utilization of battery analysis methodologies for parametrization and enhancement of an electrochemically approximated simulation model approach for thermal management battery system tests",
+                "url": "https://doi.org/10.1007/s41104-025-00150-0",
+                "year": null,
+                "impact_score": 2,
+                "abstract": "Abstract\n                  \n                    The exact investigation of the thermal management of battery electric vehicles requires the precise simulation of the processes inside the cell. However, there is a broad trade-off between the complexity and manageability of the simulative methodology on the one hand and the necessary spatial accuracy of the simulation result on the other, which is why complex models that describe the cell down to local current densities and diffusion processes are not suitable for this overriding purpose. An equivalent circuit model proves to be the most suitable for the desired objectives. This model reproduces the electrochemical processes by means of an equivalent circuit and simulates the thermal processes through the cell layers to the surface by means of a thermal network model. Such an approach was pursued in the previous work, using various literature references and empirically obtained parameters (Lorbeck and Fruehwirth in Autom Engine Technol 10:2\n                    <jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"10.1007/s41104-024-00146-2\" ext-link-type=\"doi\">https://doi.org/10.1007/s41104-024-00146-2</jats:ext-link>\n                    , 2025). This approach proved to be pragmatic, but it quickly became clear that a more precise method to parameterize the equivalent circuit diagram was required for this specific application. The improved parametrization includes the measurement of several cells in terms of electrochemical impedance spectroscopy and open-circuit voltage, which are carried out and processed on site. This method makes it possible to achieve an adapted parametrization relatively quickly by measuring other cells. After carrying out these measurements and integrating the new parameters into the simulation methodology, a validation against measured cells and against the previously used simulation methodology (literature-based, partly empirically determined parameters) could be carried out. Despite the additional effort involved in measuring the cells, the validation speaks in favor of introducing the new simulation methodology, as the accuracy of the predictions and in particular the simulation of transient parts within the cycles has improved. This means that in future, it will be possible to better illuminate and understand various areas of thermal and electrical cell stress that are of interest for the observations. A further validation, which compares different real driving measurements and testbed cycles on cell level with the according simulation data, is planned for 2025 and is currently being analyzed as part of ongoing investigations.\n                  "
+            }
+        ],
+        "Lightweighting": [
+            {
+                "title": "Battery Electric Vehicle Lightweighting Strategies: Addressing Energy Consumption and Range Anxiety",
+                "url": "https://doi.org/10.15282/ijame.21.4.2024.4.0905",
+                "year": null,
+                "impact_score": 2,
+                "abstract": "In general, an internal combustion engine vehicle is still the convention in personal and commercial transport, but due to its high use stage CO2 emission, a shift is occurring in propulsion methods, and the use of battery electric vehicles (BEV) will become the new norm. BEV\u2019s curb weight is, in general, greater than that of a conventional fuelled vehicle (CFV) for equivalent classes. Consequently, it is questionable that the level of BEV\u2019s energy consumption is acceptable. The aim of this paper is to compare the mass induced energy consumption of CFV and BEV. The expectation is that the comparative study of energy consumption between CFV and BEV will provide insight for proposing a strategy to determine the extent to which lightweighting can be introduced to a BEV. Encouragingly, less exhaustive energy consumption can help by reducing range anxiety by increasing BEV range, resolving one issue facing a BEV. With a typical road condition for hilly and flat roads, various drive cycles are also taken into consideration, and the energy consumption profiles for CFV and BEV can be determined. The vehicle model involved using the MATLAB/Simulink software underpinned by longitudinal vehicle dynamic methods. The idea is to determine the amount of lightweighting of various components of a BEV through an iterative process based on energy consumption profiles. As a function of mass reduction, for comparative energy expenditure, the results showed that a range of 28 to 36% reduction in BEV mass was achieved, which in turn can increase the driving range by 36.4 to 46.8%."
+            },
+            {
+                "title": "Utilization of battery analysis methodologies for parametrization and enhancement of an electrochemically approximated simulation model approach for thermal management battery system tests",
+                "url": "https://doi.org/10.1007/s41104-025-00150-0",
+                "year": null,
+                "impact_score": 2,
+                "abstract": "Abstract\n                  \n                    The exact investigation of the thermal management of battery electric vehicles requires the precise simulation of the processes inside the cell. However, there is a broad trade-off between the complexity and manageability of the simulative methodology on the one hand and the necessary spatial accuracy of the simulation result on the other, which is why complex models that describe the cell down to local current densities and diffusion processes are not suitable for this overriding purpose. An equivalent circuit model proves to be the most suitable for the desired objectives. This model reproduces the electrochemical processes by means of an equivalent circuit and simulates the thermal processes through the cell layers to the surface by means of a thermal network model. Such an approach was pursued in the previous work, using various literature references and empirically obtained parameters (Lorbeck and Fruehwirth in Autom Engine Technol 10:2\n                    <jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"10.1007/s41104-024-00146-2\" ext-link-type=\"doi\">https://doi.org/10.1007/s41104-024-00146-2</jats:ext-link>\n                    , 2025). This approach proved to be pragmatic, but it quickly became clear that a more precise method to parameterize the equivalent circuit diagram was required for this specific application. The improved parametrization includes the measurement of several cells in terms of electrochemical impedance spectroscopy and open-circuit voltage, which are carried out and processed on site. This method makes it possible to achieve an adapted parametrization relatively quickly by measuring other cells. After carrying out these measurements and integrating the new parameters into the simulation methodology, a validation against measured cells and against the previously used simulation methodology (literature-based, partly empirically determined parameters) could be carried out. Despite the additional effort involved in measuring the cells, the validation speaks in favor of introducing the new simulation methodology, as the accuracy of the predictions and in particular the simulation of transient parts within the cycles has improved. This means that in future, it will be possible to better illuminate and understand various areas of thermal and electrical cell stress that are of interest for the observations. A further validation, which compares different real driving measurements and testbed cycles on cell level with the according simulation data, is planned for 2025 and is currently being analyzed as part of ongoing investigations.\n                  "
+            },
+            {
+                "title": "Addressing Fire Safety, Ground Impact Resistance, and Thermal Management in Composite EV Battery Enclosures: A Review",
+                "url": "https://doi.org/10.31603/ae.12540",
+                "year": null,
+                "impact_score": 2,
+                "abstract": "Lithium-ion batteries are fundamental to modern electric vehicles, offering high energy density, long cycle life, and low self-discharge rates. However, thermal runaway\u2014a critical safety issue involving uncontrolled temperature increases\u2014can lead to fire or explosion. Ensuring flame retardancy is crucial in accidents where battery packs are exposed to external fires. Additionally, battery packs are susceptible to mechanical stresses and potential damage from ground impacts like debris or uneven road surfaces. Effective thermal management significantly impacts capacity and longevity. This review emphasizes the importance of researching flame retardancy, ground impact resistance, and thermal management, especially in composite battery enclosures. Composites serve as a lightweight alternative to metals and help overcome one of the main constraints of EVs, which is weight. Ground impact refers to the physical force battery packs endure during collisions, hitting potholes, debris, or accidents. Therefore, understanding the effects of ground impact on battery enclosures is crucial for design considerations. Effective thermal management is also essential, as it directly affects the performance and safety of Lithium-ion battery packs in EVs."
+            },
+            {
+                "title": "Development of an electrochemically approximated simulation model and a hardware substitution cell approach for thermal management battery system tests",
+                "url": "https://doi.org/10.1007/s41104-024-00146-2",
+                "year": null,
+                "impact_score": 2,
+                "abstract": "Abstract\n                  Battery tests require a high degree of safety-related preparation and constant monitoring of the operating parameters to guarantee the smooth running of tests without incidents or exceptional events such as a thermal runaway. As the handling before, during, and especially after the tests is relatively complex and sometimes just as costly, it is important to reduce these risks and costs as well as to find an alternative to conventional battery tests. Such an approach is being developed by the T-cell project of the Institute of Thermodynamics and Sustainable Propulsion Systems at Graz University of Technology, founded by the Austrian Research Promotion Agency (FFG). A thermal substitution cell, which resembles a battery cell on the outside, is to reflect the surface temperature distribution of a chemical cell without there being any cell chemistry inside the substitution cell. Rather, the interior should not be part of the observation and the thermal requirements should be provided by an internal heating option. Such a measurement approach requires, among other things, a control and regulation unit, without which it would not be possible to transfer the thermal behavior of a battery cell to the substitution cell. Together with the electronic structure of the substitution cell and a circuit environment including a battery simulation model established at a later date, this control/regulation module forms an overall package that considerably facilitates investigations at cell, module, and pack level by substitution of a certain amount of cells using system symmetry advantages. A suitable simulation model was constructed and parameterized for this purpose from an electrochemical and a thermal network. As a first step, the data, which were partly determined empirically but also derived from real cell measurements in the literature, were adapted to the requirements of the simulation environment, so that the real cell used could be simulated thermally in principle. The simulation observations represent the state of the art of the model and are continuously improved by measurements carried out at the institute, thus building up the overall system in more detail."
+            },
+            {
+                "title": "Dynamic thermal management control solution for an air-cooled automotive Lithium Ion battery pack",
+                "url": "https://doi.org/10.1109/vppc63154.2024.10755496",
+                "year": 2024,
+                "impact_score": 2,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            }
+        ],
+        "Friction Reduction": [
+            {
+                "title": "Statistical analysis of trends in Battery Electric Vehicles: Special reference to vehicle weight reduction, electric motor, battery, and interior space dimensions",
+                "url": "https://doi.org/10.14669/am/189962",
+                "year": null,
+                "impact_score": 10,
+                "abstract": "Electric vehicles (EVs) are increasingly being used, as they are more environmentally friendly than conventional vehicles with internal combustion engines (ICE). Battery electric vehicles (BEVs) can be said to have zero exhaust emissions only if the electricity used to drive these vehicles is obtained in an environmentally friendly way. It is common knowledge that BEVs have a significantly higher overall mass than conventional vehicles. The significantly higher total vehicle weight of BEVs can have various adverse effects on energy consumption during movement and the vehicle's dynamics. In contrast to the negative aspects of BEVs, there are also positive aspects that are primarily related to the comfort of drivers and passengers, considering the main fact that they do not require the presence of a floor tunnel. In this paper, trends related to BEVs in the previous five years were statistically analysed. Changes in average sizes related to BEVs are shown, primarily internal dimensions that can be of crucial importance when deciding between BEVs and conventional vehicles. In the paper itself, other important trends are presented, both for the electric motor itself and for the batteries used in BEVs."
+            },
+            {
+                "title": "Utilization of battery analysis methodologies for parametrization and enhancement of an electrochemically approximated simulation model approach for thermal management battery system tests",
+                "url": "https://doi.org/10.1007/s41104-025-00150-0",
+                "year": null,
+                "impact_score": 2,
+                "abstract": "Abstract\n                  \n                    The exact investigation of the thermal management of battery electric vehicles requires the precise simulation of the processes inside the cell. However, there is a broad trade-off between the complexity and manageability of the simulative methodology on the one hand and the necessary spatial accuracy of the simulation result on the other, which is why complex models that describe the cell down to local current densities and diffusion processes are not suitable for this overriding purpose. An equivalent circuit model proves to be the most suitable for the desired objectives. This model reproduces the electrochemical processes by means of an equivalent circuit and simulates the thermal processes through the cell layers to the surface by means of a thermal network model. Such an approach was pursued in the previous work, using various literature references and empirically obtained parameters (Lorbeck and Fruehwirth in Autom Engine Technol 10:2\n                    <jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"10.1007/s41104-024-00146-2\" ext-link-type=\"doi\">https://doi.org/10.1007/s41104-024-00146-2</jats:ext-link>\n                    , 2025). This approach proved to be pragmatic, but it quickly became clear that a more precise method to parameterize the equivalent circuit diagram was required for this specific application. The improved parametrization includes the measurement of several cells in terms of electrochemical impedance spectroscopy and open-circuit voltage, which are carried out and processed on site. This method makes it possible to achieve an adapted parametrization relatively quickly by measuring other cells. After carrying out these measurements and integrating the new parameters into the simulation methodology, a validation against measured cells and against the previously used simulation methodology (literature-based, partly empirically determined parameters) could be carried out. Despite the additional effort involved in measuring the cells, the validation speaks in favor of introducing the new simulation methodology, as the accuracy of the predictions and in particular the simulation of transient parts within the cycles has improved. This means that in future, it will be possible to better illuminate and understand various areas of thermal and electrical cell stress that are of interest for the observations. A further validation, which compares different real driving measurements and testbed cycles on cell level with the according simulation data, is planned for 2025 and is currently being analyzed as part of ongoing investigations.\n                  "
+            },
+            {
+                "title": "Industrial policy imitation: the perils of matching the US Inflation Reduction Act to attract battery plants",
+                "url": "https://doi.org/10.1504/ijatm.2024.142134",
+                "year": 2024,
+                "impact_score": 2,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Addressing Fire Safety, Ground Impact Resistance, and Thermal Management in Composite EV Battery Enclosures: A Review",
+                "url": "https://doi.org/10.31603/ae.12540",
+                "year": null,
+                "impact_score": 2,
+                "abstract": "Lithium-ion batteries are fundamental to modern electric vehicles, offering high energy density, long cycle life, and low self-discharge rates. However, thermal runaway\u2014a critical safety issue involving uncontrolled temperature increases\u2014can lead to fire or explosion. Ensuring flame retardancy is crucial in accidents where battery packs are exposed to external fires. Additionally, battery packs are susceptible to mechanical stresses and potential damage from ground impacts like debris or uneven road surfaces. Effective thermal management significantly impacts capacity and longevity. This review emphasizes the importance of researching flame retardancy, ground impact resistance, and thermal management, especially in composite battery enclosures. Composites serve as a lightweight alternative to metals and help overcome one of the main constraints of EVs, which is weight. Ground impact refers to the physical force battery packs endure during collisions, hitting potholes, debris, or accidents. Therefore, understanding the effects of ground impact on battery enclosures is crucial for design considerations. Effective thermal management is also essential, as it directly affects the performance and safety of Lithium-ion battery packs in EVs."
+            },
+            {
+                "title": "Development of an electrochemically approximated simulation model and a hardware substitution cell approach for thermal management battery system tests",
+                "url": "https://doi.org/10.1007/s41104-024-00146-2",
+                "year": null,
+                "impact_score": 2,
+                "abstract": "Abstract\n                  Battery tests require a high degree of safety-related preparation and constant monitoring of the operating parameters to guarantee the smooth running of tests without incidents or exceptional events such as a thermal runaway. As the handling before, during, and especially after the tests is relatively complex and sometimes just as costly, it is important to reduce these risks and costs as well as to find an alternative to conventional battery tests. Such an approach is being developed by the T-cell project of the Institute of Thermodynamics and Sustainable Propulsion Systems at Graz University of Technology, founded by the Austrian Research Promotion Agency (FFG). A thermal substitution cell, which resembles a battery cell on the outside, is to reflect the surface temperature distribution of a chemical cell without there being any cell chemistry inside the substitution cell. Rather, the interior should not be part of the observation and the thermal requirements should be provided by an internal heating option. Such a measurement approach requires, among other things, a control and regulation unit, without which it would not be possible to transfer the thermal behavior of a battery cell to the substitution cell. Together with the electronic structure of the substitution cell and a circuit environment including a battery simulation model established at a later date, this control/regulation module forms an overall package that considerably facilitates investigations at cell, module, and pack level by substitution of a certain amount of cells using system symmetry advantages. A suitable simulation model was constructed and parameterized for this purpose from an electrochemical and a thermal network. As a first step, the data, which were partly determined empirically but also derived from real cell measurements in the literature, were adapted to the requirements of the simulation environment, so that the real cell used could be simulated thermally in principle. The simulation observations represent the state of the art of the model and are continuously improved by measurements carried out at the institute, thus building up the overall system in more detail."
+            }
+        ],
+        "Thermal Efficiency": [
+            {
+                "title": "A study on a battery pack in a hybrid battery thermal management system integrating with thermoelectric cooling",
+                "url": "https://doi.org/10.1016/j.csite.2024.104856",
+                "year": 2024,
+                "impact_score": 29,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Improving Li-ion battery thermal management via hydrogel evaporative cooling",
+                "url": "https://doi.org/10.1016/j.applthermaleng.2024.123173",
+                "year": 2024,
+                "impact_score": 18,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Numerical and experimental analysis of battery thermal management of 21700 Nickel Manganese Cobalt lithium-ion battery",
+                "url": "https://doi.org/10.1016/j.applthermaleng.2024.123400",
+                "year": 2024,
+                "impact_score": 7,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Enhancing Battery Pack Cooling Efficiency Through Graphite-Integrated Hybrid-Battery Thermal Management Systems",
+                "url": "https://doi.org/10.3390/batteries11030113",
+                "year": null,
+                "impact_score": 2,
+                "abstract": "This study investigates a hybrid-battery thermal management system (BTMS) integrating air-cooling, a cold plate, and porous materials to optimize heat dissipation in a 20-cell battery pack during charging and discharging cycles of up to 5C. A computational fluid dynamics (CFD) model based on the equivalent circuit model (ECM) is developed to simulate battery pack behavior under various cooling configurations, including different porous media and vortex generators placed between cells. The impact of battery pack configurations on heat generation is analyzed, and five different porous materials are tested for their cooling performance. The results reveal that, among the examined materials, graphite is the most effective in maintaining the battery temperature within an acceptable range, particularly during high C-rate charging. Graphite integration significantly reduces the thermal stabilization time from over an hour to approximately 600 s. Additionally, our parametric experiment evaluates the influence of ambient temperature, airflow velocity, and cold-plate temperature on the system\u2019s cooling efficiency. The findings demonstrate that maintaining the cold-plate temperature between 300 K and 305 K minimizes the temperature gradient, ensuring uniform thermal distribution. This research highlights the potential of hybrid BTMS designs incorporating porous media and cold plates to enhance battery performance, safety, and lifespan under various operational conditions."
+            },
+            {
+                "title": "Hybrid battery thermal management systems",
+                "url": "https://doi.org/10.1016/b978-0-443-19025-4.00013-0",
+                "year": 2024,
+                "impact_score": 2,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            }
+        ]
+    },
+    "Three Cylinder Engine": {
+        "Cost Optimization": [
+            {
+                "title": "Effects of Various Compression Ratios on a Direct Injection Spark Ignition Hydrogen-Fueled Engine in a Single-Cylinder Engine",
+                "url": "https://doi.org/10.1007/s12239-024-00096-6",
+                "year": 2024,
+                "impact_score": 6,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "An experimental study on aging effects of fuel-cut events including sound optimized torque reduction on modern three-way catalysts",
+                "url": "https://doi.org/10.1007/s41104-024-00144-4",
+                "year": null,
+                "impact_score": 3,
+                "abstract": "AbstractContinuously increasing country-specific emission standards for passenger vehicles demand additional development steps in complex exhaust gas aftertreatment systems for a more effective reduction of harmful gases. The efficiency of the aftertreatment system declines over its lifecycle due to specific load profiles and other boundary conditions, resulting in increasing emissions over vehicle mileage. As a result, the durability of the exhaust system becomes more important. Fuel cut is an intended, temporary interruption of the fuel supply of modern combustion engines of passenger cars to reduce fuel consumption and emissions. During this fuel reduction event, unconsumed oxygen of rich and cool fresh air is introduced to the combustion chamber and to the exhaust system. Besides a catalyst cool down, oxidation effects are provoked by enhanced oxygen reactions processes within the catalyst\u2019s washcoat and surface layers. In this publication, specific aging cycles with a variation of fuel-cut programs were examined on their effects on a modified modern eight-cylinder turbo-charged engine, especially on their oxidation effects correlating to catalyst aging. Light-off curves and conversion heat maps were used to evaluate possible damaging impacts of fuel-cut events on the aging behavior of the catalyst systems. Results indicate that higher frequency of fuel-cut events results in a reduced catalyst conversion efficiency, whereas thermal sintering might be reduced due to overall lower temperature load. Temporary oxidation processes on catalyst\u2019s surfaces occur only in a short timespan after changing the air fuel ratio to lean, resulting in a weaker thermal sintering during longer fuel-cut events. Sound optimized torque reduction functions, used in sports cars for a better drivability and powertrain response, exhibit a stronger aging influence due to additional thermal shock effects on the catalysts front face, as demonstrated via optical infrared sensor technology during catalyst aging cycles on the modified engine bench setup. A theoretical calculation of aging processes as a combination of thermal sintering by Arrhenius equation as well as oxidation process is discussed to describe an aging classification induced via oxidation processes. Additional physisorption measurements of different catalyst probes support the results which indicate the direction of future experimental approaches."
+            },
+            {
+                "title": "Investigations on the performance of a single-cylinder diesel engine powered by biodiesel derived from palm oil and antioxidant additives",
+                "url": "https://doi.org/10.14669/am/193804",
+                "year": null,
+                "impact_score": 2,
+                "abstract": "Fossil fuel supplies are being depleted and environmental pollution is increasing due to the transportation and industry sectors' growing intensification. Biodiesel is a cheap, abundant, and environmentally beneficial fuel source that may be used. This study aims to reduce pollution in diesel engines by adding L-ascorbic acid, an antioxidant, to palm oil biodiesel (PB20, 20% palm biodiesel + 80% diesel). Solvent extraction was used to obtain palm oil from the discarded palm. Alkali transesterification was used to turn palm oil into biodiesel. Fuel samples consisting of 90% biodiesel + 10% L-ascorbic acid (PB20L10) and 95% biodiesel + 5% L-ascorbic acid (PB20L5) are created with varying percentages of antioxidant ingredient added to the biodiesel. The results of the experimental study show that, in comparison to diesel fuel and PB20, the oxides of nitrogen emissions from PB20L5 and PB20L10 are much lower. The brake thermal efficiency (BTE) is also reduced with an antioxidant added to biodiesel in comparison with PB20. Additionally, PB20 emissions increased modestly when antioxidant ingredient was added."
+            },
+            {
+                "title": "Enhancing Engine Cylinder Heat Dissipation Capacity Through Direct Optimization (DO) Techniques",
+                "url": "https://doi.org/10.3390/pr12122659",
+                "year": null,
+                "impact_score": 2,
+                "abstract": "Internal combustion (IC) engines are used widely as the primary power source for automobiles of all types, cars, motorcycles, and trucks. Because of the high combustion temperatures involved in the operation, the excess heat is removed by means of extended fins that increase the surface area for adequate cooling. Significant improvement in the heat dissipation characteristics of the engine cylinder can be achieved by optimizing the design of these fins. The aim of this study is to evaluate the thermal performance of engine cylinder fins using an analytical system of finite element analysis (ANSYS FEA) software, using a direct optimization (DO) approach to identify optimal fin design. Analysis shows that fin length and width play critical roles in improving cooling efficiency, lowering the maximum temperature within the cylinder to 549.46 K and enhancing total heat flux to 7225.31 W/m2, which is a 25.87% increase from the generic design, capable of heating removal of 5740.22 W/m2. The current fin design is effective but could be improved in heat dissipation, mainly at fin tips. To optimize thermal performance while minimizing material costs, a balanced fin dimension is recommended. Alternative materials, transient heating analysis, and experimental verification may be examined in the future to achieve a total understanding of fin geometry and behavior under real operating conditions. These insights lay a foundation to accelerate cooling systems development in the automotive, aerospace, and heavy equipment industries, where efficient heat transfer is key for performance and long-term durability."
+            },
+            {
+                "title": "Powertrain NVH Optimization of Single Cylinder CI Engine",
+                "url": "https://doi.org/10.4271/2024-28-0001",
+                "year": null,
+                "impact_score": 2,
+                "abstract": "&lt;div class=\"section abstract\"&gt;&lt;div class=\"htmlview paragraph\"&gt;With increasing pursuit for comfort in mobility NVH characteristics are becoming more important than ever. Achieving a benchmark beating NVH behavior involves optimizing source, transfer paths as well as target location mechanical characteristics. In ICE vehicles, powertrain accounts for major source of noise and vibration. This work encompasses NVH refinement strategies for a single cylinder compression ignition engine. The work starts with setting target values for NVH characteristics based on competitive benchmark data analysis. A complete development strategy involving extensive testing and CAE correlation is presented here. Contribution analysis in component level for optimization of NVH behavior is carried out employing NVH testing in anechoic chamber supported by CAE simulations.&lt;/div&gt;&lt;div class=\"htmlview paragraph\"&gt;This paper describes the later phases of the entire development process which are decisive for engine NVH; the combustion and mechanical development phase and the NVH development and refinement phase. In order optimize engine acoustical performance, experimental identification and localization of noise sources were performed at different speed and load. Correlation of noise to structural vibrations and resonances were established and design matured using simulation and proved with experimental validation to achieve the set targets. Deep down analysis of various powertrain components was done to reduce source noise and vibrations. CAE models were created for design optimizations which were validated using test results. Force analysis was performed, and balancer shaft was designed to reduced inertial forces causing vibration as net unbalanced forces are always a concern in single cylinder engines. Finally complete validation of the powertrain accommodating all the optimizations is done in semi anechoic testbench as well as in vehicle.&lt;/div&gt;&lt;/div&gt;"
+            }
+        ],
+        "Fuel Economy": [
+            {
+                "title": "Effects of port-fuel injected methanol distribution on cylinder-to-cylinder variations in a retrofitted heavy-duty diesel\u2013methanol dual fuel engine",
+                "url": "https://doi.org/10.1016/j.fuel.2025.134733",
+                "year": 2025,
+                "impact_score": 14,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Estimation of assorted injection schedules on hydrogen-diesel dual fuel and reactivity controlled compression ignition modes in a medium duty automotive engine",
+                "url": "https://doi.org/10.1016/j.fuel.2023.130435",
+                "year": 2024,
+                "impact_score": 13,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Effects of fuel injection pressure on the double-cylinder dual fuel turbocharged CRDI engine characteristics with H2 enrichment",
+                "url": "https://doi.org/10.1016/j.fuel.2025.134592",
+                "year": 2025,
+                "impact_score": 9,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Influence of pilot injection strategy on in-cylinder combustion, emissions and energy efficiency of hydrogen/diesel dual-fuel engine at low load",
+                "url": "https://doi.org/10.1016/j.fuel.2025.135614",
+                "year": 2025,
+                "impact_score": 7,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Influence of the air\u2013fuel-ratio and fuel on the reactivity of diesel soot",
+                "url": "https://doi.org/10.1007/s41104-024-00145-3",
+                "year": null,
+                "impact_score": 4,
+                "abstract": "AbstractThis work deals with the influence of the variation of the air\u2013fuel-ratio on the emissions as well as on the soot reactivity of a commercial vehicle diesel engine. The emissions and the associated soot reactivity are compared between conventional fossil diesel fuel and the regeneratively produced paraffinic diesel fuel HVO (hydrotreated vegetable oils). All investigations were carried out on a single-cylinder engine and the gaseous and particulate emissions were recorded. Additionally, the collected engine out soot samples were analyzed by thermogravimetric balance (thermogravimetric analysis\u2009=\u2009TGA) to determine the reactivity of the soot. Regardless of the set engine operating point, it was shown that the particulate mass is significantly reduced when operating with HVO compared to fossil diesel fuel. Other gaseous emissions are also minimally lower compared to fossil diesel. In contrast, however, the HVO fuel has an increased number of particles due to smaller particles. The variation of the engine operating parameters showed the same tendencies with regard to soot reactivity, regardless of the fuel used. However, the parameter variations were more or less pronounced depending on the respective fuel. It is particularly noticeable that the reactivity of soot, which is produced when using HVO, is reduced at every operating point despite the lower particulate mass compared to fossil diesel fuel."
+            }
+        ],
+        "Lightweighting": [
+            {
+                "title": "Effects of Various Compression Ratios on a Direct Injection Spark Ignition Hydrogen-Fueled Engine in a Single-Cylinder Engine",
+                "url": "https://doi.org/10.1007/s12239-024-00096-6",
+                "year": 2024,
+                "impact_score": 6,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Computational Fluid Dynamics of Four Stroke In-Cylinder Charge Behavior at Distinct Valve Lift Opening Clearance in Spark Ignition Reciprocating Internal Combustion Renault Engine",
+                "url": "https://doi.org/10.30939/ijastech..1337386",
+                "year": null,
+                "impact_score": 5,
+                "abstract": "<jats:p xml:lang=\"en\">Renault internal combustion engines have complex, expensive, and challenging experimentally computed in-cylinder flow dynamics. The current study employed computational fluid dynamics to simulate the in-cylinder charge behavior at various valve lift opening clearance in a four-stroke spark-ignition internal combustion engine. The governing equations for an unstable, three-dimensional and compressible turbulent flow were computed using the continuity equations (for mass conservation), Navier-Stokes equations (for momentum conservation), and RNG k- turbulence model. The engine was modelled using SolidWorks 2019 while the in-cylinder charge behavior was simulated using ANSYS Fluent 14.5 model. The thermal characteristics and parameters with respect to air-fuel mixtures were observed to improve with higher temperature (with respect to the cylinder) during combustion. The volumetric and mechanical efficiency of the cycle significantly improved as a result of the increased valve lift opening clearance, which caused more charge to be ingested into the cylinder. Additionally, it was found that at lower valve lift, which may be characterized by minimal or zero losses, the rate of heat retention in the cylinder was at its peak, but very high cylinder charge temperatures was predisposed to a decrease in the intake charge density. From the Particle Image Velocimetry (PIV) obtained in this study, increasing valve lift opening clearance led to increase in-cylinder velocity vectors, vorticity magnitudes, and distributions of turbulence kinetic energy (TKE), which signified improvement in combustion efficiency, increased torque and power output for efficient engine performance."
+            },
+            {
+                "title": "An experimental study on aging effects of fuel-cut events including sound optimized torque reduction on modern three-way catalysts",
+                "url": "https://doi.org/10.1007/s41104-024-00144-4",
+                "year": null,
+                "impact_score": 3,
+                "abstract": "AbstractContinuously increasing country-specific emission standards for passenger vehicles demand additional development steps in complex exhaust gas aftertreatment systems for a more effective reduction of harmful gases. The efficiency of the aftertreatment system declines over its lifecycle due to specific load profiles and other boundary conditions, resulting in increasing emissions over vehicle mileage. As a result, the durability of the exhaust system becomes more important. Fuel cut is an intended, temporary interruption of the fuel supply of modern combustion engines of passenger cars to reduce fuel consumption and emissions. During this fuel reduction event, unconsumed oxygen of rich and cool fresh air is introduced to the combustion chamber and to the exhaust system. Besides a catalyst cool down, oxidation effects are provoked by enhanced oxygen reactions processes within the catalyst\u2019s washcoat and surface layers. In this publication, specific aging cycles with a variation of fuel-cut programs were examined on their effects on a modified modern eight-cylinder turbo-charged engine, especially on their oxidation effects correlating to catalyst aging. Light-off curves and conversion heat maps were used to evaluate possible damaging impacts of fuel-cut events on the aging behavior of the catalyst systems. Results indicate that higher frequency of fuel-cut events results in a reduced catalyst conversion efficiency, whereas thermal sintering might be reduced due to overall lower temperature load. Temporary oxidation processes on catalyst\u2019s surfaces occur only in a short timespan after changing the air fuel ratio to lean, resulting in a weaker thermal sintering during longer fuel-cut events. Sound optimized torque reduction functions, used in sports cars for a better drivability and powertrain response, exhibit a stronger aging influence due to additional thermal shock effects on the catalysts front face, as demonstrated via optical infrared sensor technology during catalyst aging cycles on the modified engine bench setup. A theoretical calculation of aging processes as a combination of thermal sintering by Arrhenius equation as well as oxidation process is discussed to describe an aging classification induced via oxidation processes. Additional physisorption measurements of different catalyst probes support the results which indicate the direction of future experimental approaches."
+            },
+            {
+                "title": "Investigations on the performance of a single-cylinder diesel engine powered by biodiesel derived from palm oil and antioxidant additives",
+                "url": "https://doi.org/10.14669/am/193804",
+                "year": null,
+                "impact_score": 2,
+                "abstract": "Fossil fuel supplies are being depleted and environmental pollution is increasing due to the transportation and industry sectors' growing intensification. Biodiesel is a cheap, abundant, and environmentally beneficial fuel source that may be used. This study aims to reduce pollution in diesel engines by adding L-ascorbic acid, an antioxidant, to palm oil biodiesel (PB20, 20% palm biodiesel + 80% diesel). Solvent extraction was used to obtain palm oil from the discarded palm. Alkali transesterification was used to turn palm oil into biodiesel. Fuel samples consisting of 90% biodiesel + 10% L-ascorbic acid (PB20L10) and 95% biodiesel + 5% L-ascorbic acid (PB20L5) are created with varying percentages of antioxidant ingredient added to the biodiesel. The results of the experimental study show that, in comparison to diesel fuel and PB20, the oxides of nitrogen emissions from PB20L5 and PB20L10 are much lower. The brake thermal efficiency (BTE) is also reduced with an antioxidant added to biodiesel in comparison with PB20. Additionally, PB20 emissions increased modestly when antioxidant ingredient was added."
+            },
+            {
+                "title": "New Horizons of Cylinder Mixture Formation in Direct Injection Hydrogen Combustion Engines",
+                "url": "https://doi.org/10.1007/978-3-658-45010-6_9",
+                "year": 2024,
+                "impact_score": 2,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            }
+        ],
+        "Friction Reduction": [
+            {
+                "title": "Effects of Various Compression Ratios on a Direct Injection Spark Ignition Hydrogen-Fueled Engine in a Single-Cylinder Engine",
+                "url": "https://doi.org/10.1007/s12239-024-00096-6",
+                "year": 2024,
+                "impact_score": 6,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Study on the tribological behaviors of the cylinder liner-piston ring in the ammonia-fueled engine",
+                "url": "https://doi.org/10.26599/frict.2025.9440974",
+                "year": 2025,
+                "impact_score": 6,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Computational Fluid Dynamics of Four Stroke In-Cylinder Charge Behavior at Distinct Valve Lift Opening Clearance in Spark Ignition Reciprocating Internal Combustion Renault Engine",
+                "url": "https://doi.org/10.30939/ijastech..1337386",
+                "year": null,
+                "impact_score": 5,
+                "abstract": "<jats:p xml:lang=\"en\">Renault internal combustion engines have complex, expensive, and challenging experimentally computed in-cylinder flow dynamics. The current study employed computational fluid dynamics to simulate the in-cylinder charge behavior at various valve lift opening clearance in a four-stroke spark-ignition internal combustion engine. The governing equations for an unstable, three-dimensional and compressible turbulent flow were computed using the continuity equations (for mass conservation), Navier-Stokes equations (for momentum conservation), and RNG k- turbulence model. The engine was modelled using SolidWorks 2019 while the in-cylinder charge behavior was simulated using ANSYS Fluent 14.5 model. The thermal characteristics and parameters with respect to air-fuel mixtures were observed to improve with higher temperature (with respect to the cylinder) during combustion. The volumetric and mechanical efficiency of the cycle significantly improved as a result of the increased valve lift opening clearance, which caused more charge to be ingested into the cylinder. Additionally, it was found that at lower valve lift, which may be characterized by minimal or zero losses, the rate of heat retention in the cylinder was at its peak, but very high cylinder charge temperatures was predisposed to a decrease in the intake charge density. From the Particle Image Velocimetry (PIV) obtained in this study, increasing valve lift opening clearance led to increase in-cylinder velocity vectors, vorticity magnitudes, and distributions of turbulence kinetic energy (TKE), which signified improvement in combustion efficiency, increased torque and power output for efficient engine performance."
+            },
+            {
+                "title": "An experimental study on aging effects of fuel-cut events including sound optimized torque reduction on modern three-way catalysts",
+                "url": "https://doi.org/10.1007/s41104-024-00144-4",
+                "year": null,
+                "impact_score": 3,
+                "abstract": "AbstractContinuously increasing country-specific emission standards for passenger vehicles demand additional development steps in complex exhaust gas aftertreatment systems for a more effective reduction of harmful gases. The efficiency of the aftertreatment system declines over its lifecycle due to specific load profiles and other boundary conditions, resulting in increasing emissions over vehicle mileage. As a result, the durability of the exhaust system becomes more important. Fuel cut is an intended, temporary interruption of the fuel supply of modern combustion engines of passenger cars to reduce fuel consumption and emissions. During this fuel reduction event, unconsumed oxygen of rich and cool fresh air is introduced to the combustion chamber and to the exhaust system. Besides a catalyst cool down, oxidation effects are provoked by enhanced oxygen reactions processes within the catalyst\u2019s washcoat and surface layers. In this publication, specific aging cycles with a variation of fuel-cut programs were examined on their effects on a modified modern eight-cylinder turbo-charged engine, especially on their oxidation effects correlating to catalyst aging. Light-off curves and conversion heat maps were used to evaluate possible damaging impacts of fuel-cut events on the aging behavior of the catalyst systems. Results indicate that higher frequency of fuel-cut events results in a reduced catalyst conversion efficiency, whereas thermal sintering might be reduced due to overall lower temperature load. Temporary oxidation processes on catalyst\u2019s surfaces occur only in a short timespan after changing the air fuel ratio to lean, resulting in a weaker thermal sintering during longer fuel-cut events. Sound optimized torque reduction functions, used in sports cars for a better drivability and powertrain response, exhibit a stronger aging influence due to additional thermal shock effects on the catalysts front face, as demonstrated via optical infrared sensor technology during catalyst aging cycles on the modified engine bench setup. A theoretical calculation of aging processes as a combination of thermal sintering by Arrhenius equation as well as oxidation process is discussed to describe an aging classification induced via oxidation processes. Additional physisorption measurements of different catalyst probes support the results which indicate the direction of future experimental approaches."
+            },
+            {
+                "title": "Investigations on the performance of a single-cylinder diesel engine powered by biodiesel derived from palm oil and antioxidant additives",
+                "url": "https://doi.org/10.14669/am/193804",
+                "year": null,
+                "impact_score": 2,
+                "abstract": "Fossil fuel supplies are being depleted and environmental pollution is increasing due to the transportation and industry sectors' growing intensification. Biodiesel is a cheap, abundant, and environmentally beneficial fuel source that may be used. This study aims to reduce pollution in diesel engines by adding L-ascorbic acid, an antioxidant, to palm oil biodiesel (PB20, 20% palm biodiesel + 80% diesel). Solvent extraction was used to obtain palm oil from the discarded palm. Alkali transesterification was used to turn palm oil into biodiesel. Fuel samples consisting of 90% biodiesel + 10% L-ascorbic acid (PB20L10) and 95% biodiesel + 5% L-ascorbic acid (PB20L5) are created with varying percentages of antioxidant ingredient added to the biodiesel. The results of the experimental study show that, in comparison to diesel fuel and PB20, the oxides of nitrogen emissions from PB20L5 and PB20L10 are much lower. The brake thermal efficiency (BTE) is also reduced with an antioxidant added to biodiesel in comparison with PB20. Additionally, PB20 emissions increased modestly when antioxidant ingredient was added."
+            }
+        ],
+        "Thermal Efficiency": [
+            {
+                "title": "Three-dimensional simulation analysis of in-cylinder combustion in space in-orbit hydrogen\u2013oxygen internal combustion engine",
+                "url": "https://doi.org/10.1016/j.applthermaleng.2024.125391",
+                "year": 2025,
+                "impact_score": 36,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Experimental investigation on in-cylinder working process and thermal efficiency of ammonia/diesel low-carbon engine with pre-injection strategy",
+                "url": "https://doi.org/10.1016/j.applthermaleng.2024.123272",
+                "year": 2024,
+                "impact_score": 34,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Diesel-natural gas dual fuel injection strategy effects on engine ignition delay and cylinder pressure evolution",
+                "url": "https://doi.org/10.1016/j.csite.2023.103795",
+                "year": 2024,
+                "impact_score": 15,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Investigation of the effect of HHO-assisted flame-jet ignition on in-cylinder combustion, engine performance, and environmental indicators in a propane-fueled SI engine",
+                "url": "https://doi.org/10.1016/j.applthermaleng.2024.123730",
+                "year": 2024,
+                "impact_score": 9,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Research on thermal deformation of cylinder bore with orthogonal experiment method of aluminum alloy cylinder block in diesel engine",
+                "url": "https://doi.org/10.1016/j.applthermaleng.2024.122772",
+                "year": 2024,
+                "impact_score": 8,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            }
+        ]
+    },
+    "Exhaust Aftertreatment": {
+        "Cost Optimization": [
+            {
+                "title": "Influence of Exhaust Aftertreatment System on Powertrain Vibration\n                    Behavior",
+                "url": "https://doi.org/10.4271/02-17-02-0011",
+                "year": null,
+                "impact_score": 3,
+                "abstract": "&lt;div&gt;NVH refinement of commercial vehicles is the key attribute for customer\n                    acceptance. Engine and road irregularities are the two major factors responsible\n                    for the same. During powertrain isolators\u2019 design alone, the mass and inertia of\n                    the powertrain are usually considered, but in practical scenarios, a directly\n                    coupled subsystem also disturbs the boundary conditions for design. Due to the\n                    upgradation in emission norms, the exhaust aftertreatment system of modern\n                    automotive vehicles becomes heavier and more complex. This system is further\n                    coupled to the powertrain through a flexible joint or fixed joint, which results\n                    in the disturbance of the performance of the isolators.&lt;/div&gt;\n\n                \n&lt;div&gt;Therefore, to address this, the isolators design study is done by considering a\n                    multi-body dynamics model of vehicles with 16 DOF and 22 DOF problems, which is\n                    capable to simulate static and dynamic real-life events of vehicles. Design\n                    indicators are thoroughly analyzed and validated through the rigid body modes\n                    and real field events of the vehicle. As most of the research is done for\n                    four-point mounting powertrain systems by considering 6 DOF or 12 DOF in\n                    commercial vehicles but a novel approach with a 22 DOF model is proposed in this\n                    study to predict the impact of the inclusion of the exhaust aftertreatment\n                    system on torque roll axis and rigid body modes decoupling.&lt;/div&gt;\n\n                \n&lt;div&gt;The results of the proposed system show that the rigid body mode decoupling of\n                    the powertrain system improved and consequently the overall NVH performance of\n                    the vehicle in real life is further improved. Therefore, it is suggested from\n                    the study that ignoring the inclusion of the exhaust aftertreatment system in\n                    the powertrain mounting system design reduces the NVH performance of the\n                    vehicle, hence it is recommended to include it in the early phase of design.&lt;/div&gt;"
+            },
+            {
+                "title": "Exhaust Gas Aftertreatment for Methanol Dual-fuel Engines",
+                "url": "https://doi.org/10.1007/s38313-025-2040-7",
+                "year": null,
+                "impact_score": 1,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Innovative engine test bench set-up for testing of exhaust gas aftertreatment and detailed gas species analysis for CNG-SI-operation",
+                "url": "https://doi.org/10.1007/s41104-024-00140-8",
+                "year": null,
+                "impact_score": 1,
+                "abstract": "AbstractFor an efficient reduction of methane slip, a precise understanding of exhaust gas after treatment under real conditions is essential. Since it is not possible to produce catalytic converters in near-series geometry on a laboratory scale, it is necessary to resort to significantly smaller sample catalysts. Therefore, an engine test bench was designed to ensure real operating conditions for such samples with the help of space velocity and temperature control. A comparison between the actual and reference values of the space velocity results in a small deviation of 0.1% on average. Furthermore, the pressure conditions at the catalyst have been measured showing a propagation of pressure oscillations from the engine outlet which in combination with the space velocity regulation show that real conditions could be applied to the catalyst sample. Subsequently, the exhaust gas concentrations were monitored with a Fourier transform infrared spectrometer. The catalyst material used is PdO on Al<jats:sub>2</jats:sub>O<jats:sub>3</jats:sub>, common for methane oxidation. The measurements show that the CH<jats:sub>4</jats:sub> conversion is higher under lean conditions, but is below complete conversion. In a final comparison between purely stoichiometric operation and dithering, the course of the CH<jats:sub>4</jats:sub> conversion rate over the test period is examined more closely. In addition to sampling pre- and post-catalyst, the exhaust gas composition is measured spatially resolved within a catalyst channel using special measurement technology. In the temporal course of the CH<jats:sub>4</jats:sub> emissions, a stabilizing effect due to the change of the operating mode can be seen, showing that dithering seems to prevent further deactivation."
+            },
+            {
+                "title": "Demonstration of Scaled Flowrate Testbed for Emission Aftertreatment Device Testing Under Representative Engine Exhaust Conditions",
+                "url": "https://doi.org/10.1115/icef2024-141651",
+                "year": 2024,
+                "impact_score": 1,
+                "abstract": "Abstract\n               The continued development of aftertreatment devices has been critical in reducing engine tailpipe emissions and meeting ever-evolving regulatory standards. Initial phases of catalytic aftertreatment device evaluation often occur at physically scaled-down conditions, typically using laboratory benchtop reactors to test synthesized catalysts that are coated on mini-cores with flow rates of less than 10 SLPM evaluated and often in the range of 0.1\u20131 SLPM. These flows are often generated artificially using bottled gases and heaters, which do not reflect the conditions that occur under real engine operation. This reduced-scale approach is driven by cost and time constraints, as full-scale device testing requires more catalyst material and production time. Real multicylinder engines produce exhaust flows several orders of magnitude greater than what occurs on the benchtop, with numbers ranging from 1000 to &amp;gt; 10,000 SLPM in typical on-road automotive applications. An intermediary scale approach that can bridge this flowrate chasm is necessary for the efficient rapid prototyping of novel catalytic reactions for aftertreatment applications. This manuscript focuses on validating a variably scaled testbed for catalyst testing that aims to eliminate barriers between cost-effective small-scale testing and realistic full-scale implementations. This study builds on a previous work incorporating a slip-stream approach driven by a venturi-ejector to route flow through a secondary branch containing the catalyst. The current investigation specifically focuses on improving the system\u2019s overall flexibility in terms of accommodating new aftertreatment devices and operating conditions, as well as reducing required auxiliary instrumentation. Differences between the previous iteration of the system are detailed and discussed, as well as recommendations for further improvements to the system. Engine operating parameters such as intake pressure, equivalence ratio, spark timing, compression ratio, and ejector motive pressure are utilized to create the required catalyst inlet temperature, flows, and species concentration for evaluation. The system is tested using a blank catalyst for verifying composition across sampling locations, as well as to generate an operational emissions space for determining the system\u2019s ability to be utilized for intermediate-scale catalyst testing. Initial results show the system\u2019s repeatability and lack of species conversion with an inert monolith to be sufficient for eventually deploying a production catalyst and determining conversion efficiency."
+            },
+            {
+                "title": "Exhaust Noise Optimization of Gas Engine Aftertreatment",
+                "url": "https://doi.org/10.53941/ijamm.2026.100008",
+                "year": null,
+                "impact_score": 0,
+                "abstract": "To address exhaust noise from gas engines in commercial vehicles without altering the existing aftertreatment system layout, two muffler optimization strategies were investigated. Scheme 1 involved adding a perforated baffle, while Scheme 2 further optimized the perforated inlet pipe based on Scheme 1. The noise reduction performance was evaluated through acoustic simulation (insertion loss) and vehicle testing (pass-by noise). Compared with Scheme 1, Scheme 2 demonstrated superior noise performance, achieving insertion loss improvements of 4.2 dB and 1.8 dB at 600 rpm and 1800 rpm, respectively. At 600 rpm, test results indicated that both schemes were insensitive to 3rd- and 9th-order noise, indicating limited effectiveness of structure-based interventions under low-speed conditions. When the operating speed increased to 650 rpm, Scheme 2 reduced 3rd-order noise by 8.00 dB through pre-control of the flow field. This study demonstrates the effectiveness of combined perforated baffle and inlet pipe optimization under fixed structural constraints and provides a technical reference for noise control in gas engine aftertreatment systems and muffler design in similar applications."
+            }
+        ],
+        "Fuel Economy": [
+            {
+                "title": "Exhaust Gas Aftertreatment for Methanol Dual-fuel Engines",
+                "url": "https://doi.org/10.1007/s38313-025-2040-7",
+                "year": null,
+                "impact_score": 1,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Innovative engine test bench set-up for testing of exhaust gas aftertreatment and detailed gas species analysis for CNG-SI-operation",
+                "url": "https://doi.org/10.1007/s41104-024-00140-8",
+                "year": null,
+                "impact_score": 1,
+                "abstract": "AbstractFor an efficient reduction of methane slip, a precise understanding of exhaust gas after treatment under real conditions is essential. Since it is not possible to produce catalytic converters in near-series geometry on a laboratory scale, it is necessary to resort to significantly smaller sample catalysts. Therefore, an engine test bench was designed to ensure real operating conditions for such samples with the help of space velocity and temperature control. A comparison between the actual and reference values of the space velocity results in a small deviation of 0.1% on average. Furthermore, the pressure conditions at the catalyst have been measured showing a propagation of pressure oscillations from the engine outlet which in combination with the space velocity regulation show that real conditions could be applied to the catalyst sample. Subsequently, the exhaust gas concentrations were monitored with a Fourier transform infrared spectrometer. The catalyst material used is PdO on Al<jats:sub>2</jats:sub>O<jats:sub>3</jats:sub>, common for methane oxidation. The measurements show that the CH<jats:sub>4</jats:sub> conversion is higher under lean conditions, but is below complete conversion. In a final comparison between purely stoichiometric operation and dithering, the course of the CH<jats:sub>4</jats:sub> conversion rate over the test period is examined more closely. In addition to sampling pre- and post-catalyst, the exhaust gas composition is measured spatially resolved within a catalyst channel using special measurement technology. In the temporal course of the CH<jats:sub>4</jats:sub> emissions, a stabilizing effect due to the change of the operating mode can be seen, showing that dithering seems to prevent further deactivation."
+            },
+            {
+                "title": "The hydrogen injection strategy's influence on the performance and emissions (exhaust, vibration, and noise) of a dual-fuel engine",
+                "url": "https://doi.org/10.18245/ijaet.1553377",
+                "year": null,
+                "impact_score": 1,
+                "abstract": "<jats:p xml:lang=\"en\">The new trend in the search for alternative fuels for compression ignition engines is the hydrogen-diesel dual fuel (HDDF) mode. In order for dual fuel mode to provide maximum benefit in compression ignition engines, ECU-controlled fuel systems should be used, and their settings should be optimized. In this study, the effects of hydrogen energy ratio and hydrogen injection timing on engine performance, exhaust, noise, and mechanical vibration emissions in an ECU-controlled HDDF system compression ignition engine were investigated. The experiments were carried out at constant speed (1850 rpm), constant load (5 Nm), different hydrogen ratios (11, 14, 17, 20%), and different hydrogen injection timings (20, 30, 40, 50, and 60 \u00b0CA aTDC). The specific energy consumption decreased by 8.4%, NOx emissions decreased by 68.4%, and mechanical vibrations increased by 16.6% at a 14% hydrogen energy ratio and a 30\u00b0CA aTDC hydrogen injection timing. The main objective of the study is to determine the optimum hydrogen energy ratio and hydrogen injection timing in a compression ignition engine using HDDF."
+            },
+            {
+                "title": "Exhaust gas aftertreatment systems for ammonia-fueled engines",
+                "url": "https://doi.org/10.1016/j.fuel.2026.138773",
+                "year": 2026,
+                "impact_score": 0,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Experimental investigation and RSM-based statistical validation and optimization of a hydrogen\u2013TGM dual-fuel diesel engine with exhaust gas recirculation and urea aftertreatment",
+                "url": "https://doi.org/10.1016/j.fuel.2026.138453",
+                "year": 2026,
+                "impact_score": 0,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            }
+        ],
+        "Lightweighting": [
+            {
+                "title": "Influence of Exhaust Aftertreatment System on Powertrain Vibration\n                    Behavior",
+                "url": "https://doi.org/10.4271/02-17-02-0011",
+                "year": null,
+                "impact_score": 3,
+                "abstract": "&lt;div&gt;NVH refinement of commercial vehicles is the key attribute for customer\n                    acceptance. Engine and road irregularities are the two major factors responsible\n                    for the same. During powertrain isolators\u2019 design alone, the mass and inertia of\n                    the powertrain are usually considered, but in practical scenarios, a directly\n                    coupled subsystem also disturbs the boundary conditions for design. Due to the\n                    upgradation in emission norms, the exhaust aftertreatment system of modern\n                    automotive vehicles becomes heavier and more complex. This system is further\n                    coupled to the powertrain through a flexible joint or fixed joint, which results\n                    in the disturbance of the performance of the isolators.&lt;/div&gt;\n\n                \n&lt;div&gt;Therefore, to address this, the isolators design study is done by considering a\n                    multi-body dynamics model of vehicles with 16 DOF and 22 DOF problems, which is\n                    capable to simulate static and dynamic real-life events of vehicles. Design\n                    indicators are thoroughly analyzed and validated through the rigid body modes\n                    and real field events of the vehicle. As most of the research is done for\n                    four-point mounting powertrain systems by considering 6 DOF or 12 DOF in\n                    commercial vehicles but a novel approach with a 22 DOF model is proposed in this\n                    study to predict the impact of the inclusion of the exhaust aftertreatment\n                    system on torque roll axis and rigid body modes decoupling.&lt;/div&gt;\n\n                \n&lt;div&gt;The results of the proposed system show that the rigid body mode decoupling of\n                    the powertrain system improved and consequently the overall NVH performance of\n                    the vehicle in real life is further improved. Therefore, it is suggested from\n                    the study that ignoring the inclusion of the exhaust aftertreatment system in\n                    the powertrain mounting system design reduces the NVH performance of the\n                    vehicle, hence it is recommended to include it in the early phase of design.&lt;/div&gt;"
+            },
+            {
+                "title": "Exhaust Gas Aftertreatment for Methanol Dual-fuel Engines",
+                "url": "https://doi.org/10.1007/s38313-025-2040-7",
+                "year": null,
+                "impact_score": 1,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Innovative engine test bench set-up for testing of exhaust gas aftertreatment and detailed gas species analysis for CNG-SI-operation",
+                "url": "https://doi.org/10.1007/s41104-024-00140-8",
+                "year": null,
+                "impact_score": 1,
+                "abstract": "AbstractFor an efficient reduction of methane slip, a precise understanding of exhaust gas after treatment under real conditions is essential. Since it is not possible to produce catalytic converters in near-series geometry on a laboratory scale, it is necessary to resort to significantly smaller sample catalysts. Therefore, an engine test bench was designed to ensure real operating conditions for such samples with the help of space velocity and temperature control. A comparison between the actual and reference values of the space velocity results in a small deviation of 0.1% on average. Furthermore, the pressure conditions at the catalyst have been measured showing a propagation of pressure oscillations from the engine outlet which in combination with the space velocity regulation show that real conditions could be applied to the catalyst sample. Subsequently, the exhaust gas concentrations were monitored with a Fourier transform infrared spectrometer. The catalyst material used is PdO on Al<jats:sub>2</jats:sub>O<jats:sub>3</jats:sub>, common for methane oxidation. The measurements show that the CH<jats:sub>4</jats:sub> conversion is higher under lean conditions, but is below complete conversion. In a final comparison between purely stoichiometric operation and dithering, the course of the CH<jats:sub>4</jats:sub> conversion rate over the test period is examined more closely. In addition to sampling pre- and post-catalyst, the exhaust gas composition is measured spatially resolved within a catalyst channel using special measurement technology. In the temporal course of the CH<jats:sub>4</jats:sub> emissions, a stabilizing effect due to the change of the operating mode can be seen, showing that dithering seems to prevent further deactivation."
+            },
+            {
+                "title": "Demonstration of Scaled Flowrate Testbed for Emission Aftertreatment Device Testing Under Representative Engine Exhaust Conditions",
+                "url": "https://doi.org/10.1115/icef2024-141651",
+                "year": 2024,
+                "impact_score": 1,
+                "abstract": "Abstract\n               The continued development of aftertreatment devices has been critical in reducing engine tailpipe emissions and meeting ever-evolving regulatory standards. Initial phases of catalytic aftertreatment device evaluation often occur at physically scaled-down conditions, typically using laboratory benchtop reactors to test synthesized catalysts that are coated on mini-cores with flow rates of less than 10 SLPM evaluated and often in the range of 0.1\u20131 SLPM. These flows are often generated artificially using bottled gases and heaters, which do not reflect the conditions that occur under real engine operation. This reduced-scale approach is driven by cost and time constraints, as full-scale device testing requires more catalyst material and production time. Real multicylinder engines produce exhaust flows several orders of magnitude greater than what occurs on the benchtop, with numbers ranging from 1000 to &amp;gt; 10,000 SLPM in typical on-road automotive applications. An intermediary scale approach that can bridge this flowrate chasm is necessary for the efficient rapid prototyping of novel catalytic reactions for aftertreatment applications. This manuscript focuses on validating a variably scaled testbed for catalyst testing that aims to eliminate barriers between cost-effective small-scale testing and realistic full-scale implementations. This study builds on a previous work incorporating a slip-stream approach driven by a venturi-ejector to route flow through a secondary branch containing the catalyst. The current investigation specifically focuses on improving the system\u2019s overall flexibility in terms of accommodating new aftertreatment devices and operating conditions, as well as reducing required auxiliary instrumentation. Differences between the previous iteration of the system are detailed and discussed, as well as recommendations for further improvements to the system. Engine operating parameters such as intake pressure, equivalence ratio, spark timing, compression ratio, and ejector motive pressure are utilized to create the required catalyst inlet temperature, flows, and species concentration for evaluation. The system is tested using a blank catalyst for verifying composition across sampling locations, as well as to generate an operational emissions space for determining the system\u2019s ability to be utilized for intermediate-scale catalyst testing. Initial results show the system\u2019s repeatability and lack of species conversion with an inert monolith to be sufficient for eventually deploying a production catalyst and determining conversion efficiency."
+            },
+            {
+                "title": "Revolutionizing automotive lightweighting: a comparative analysis of electromagnetic free forming for clamped sheets",
+                "url": "https://doi.org/10.38152/bjtv7n4-046",
+                "year": null,
+                "impact_score": 1,
+                "abstract": "Reducing vehicle mass is a critical strategy for enhancing fuel economy and meeting the growing demand for lightweight materials in the automotive industry. Aluminum alloys have emerged as a promising solution due to their low density, but their limited formability compared to steel poses significant challenges. Electromagnetic Forming (EMF) is a high-speed process capable of significantly improving the formability of aluminum alloy sheets, enabling the production of lightweight structural components for automotive applications. This process operates within microseconds, which provides a unique advantage for rapid and efficient manufacturing. The numerical modeling of EMF plays a pivotal role in understanding the complex physics and deformation behaviors associated with this process. This research investigates the numerical modeling of EMF for various aluminum alloy sheets using a spiral coil. The results provide insights into the distinctive deformation behaviors and performance variations of different alloys under identical process conditions, which offers valuable guidance for material selection and process optimization in automotive applications."
+            }
+        ],
+        "Friction Reduction": [
+            {
+                "title": "Influence of Exhaust Aftertreatment System on Powertrain Vibration\n                    Behavior",
+                "url": "https://doi.org/10.4271/02-17-02-0011",
+                "year": null,
+                "impact_score": 3,
+                "abstract": "&lt;div&gt;NVH refinement of commercial vehicles is the key attribute for customer\n                    acceptance. Engine and road irregularities are the two major factors responsible\n                    for the same. During powertrain isolators\u2019 design alone, the mass and inertia of\n                    the powertrain are usually considered, but in practical scenarios, a directly\n                    coupled subsystem also disturbs the boundary conditions for design. Due to the\n                    upgradation in emission norms, the exhaust aftertreatment system of modern\n                    automotive vehicles becomes heavier and more complex. This system is further\n                    coupled to the powertrain through a flexible joint or fixed joint, which results\n                    in the disturbance of the performance of the isolators.&lt;/div&gt;\n\n                \n&lt;div&gt;Therefore, to address this, the isolators design study is done by considering a\n                    multi-body dynamics model of vehicles with 16 DOF and 22 DOF problems, which is\n                    capable to simulate static and dynamic real-life events of vehicles. Design\n                    indicators are thoroughly analyzed and validated through the rigid body modes\n                    and real field events of the vehicle. As most of the research is done for\n                    four-point mounting powertrain systems by considering 6 DOF or 12 DOF in\n                    commercial vehicles but a novel approach with a 22 DOF model is proposed in this\n                    study to predict the impact of the inclusion of the exhaust aftertreatment\n                    system on torque roll axis and rigid body modes decoupling.&lt;/div&gt;\n\n                \n&lt;div&gt;The results of the proposed system show that the rigid body mode decoupling of\n                    the powertrain system improved and consequently the overall NVH performance of\n                    the vehicle in real life is further improved. Therefore, it is suggested from\n                    the study that ignoring the inclusion of the exhaust aftertreatment system in\n                    the powertrain mounting system design reduces the NVH performance of the\n                    vehicle, hence it is recommended to include it in the early phase of design.&lt;/div&gt;"
+            },
+            {
+                "title": "Exhaust Gas Aftertreatment for Methanol Dual-fuel Engines",
+                "url": "https://doi.org/10.1007/s38313-025-2040-7",
+                "year": null,
+                "impact_score": 1,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Innovative engine test bench set-up for testing of exhaust gas aftertreatment and detailed gas species analysis for CNG-SI-operation",
+                "url": "https://doi.org/10.1007/s41104-024-00140-8",
+                "year": null,
+                "impact_score": 1,
+                "abstract": "AbstractFor an efficient reduction of methane slip, a precise understanding of exhaust gas after treatment under real conditions is essential. Since it is not possible to produce catalytic converters in near-series geometry on a laboratory scale, it is necessary to resort to significantly smaller sample catalysts. Therefore, an engine test bench was designed to ensure real operating conditions for such samples with the help of space velocity and temperature control. A comparison between the actual and reference values of the space velocity results in a small deviation of 0.1% on average. Furthermore, the pressure conditions at the catalyst have been measured showing a propagation of pressure oscillations from the engine outlet which in combination with the space velocity regulation show that real conditions could be applied to the catalyst sample. Subsequently, the exhaust gas concentrations were monitored with a Fourier transform infrared spectrometer. The catalyst material used is PdO on Al<jats:sub>2</jats:sub>O<jats:sub>3</jats:sub>, common for methane oxidation. The measurements show that the CH<jats:sub>4</jats:sub> conversion is higher under lean conditions, but is below complete conversion. In a final comparison between purely stoichiometric operation and dithering, the course of the CH<jats:sub>4</jats:sub> conversion rate over the test period is examined more closely. In addition to sampling pre- and post-catalyst, the exhaust gas composition is measured spatially resolved within a catalyst channel using special measurement technology. In the temporal course of the CH<jats:sub>4</jats:sub> emissions, a stabilizing effect due to the change of the operating mode can be seen, showing that dithering seems to prevent further deactivation."
+            },
+            {
+                "title": "Demonstration of Scaled Flowrate Testbed for Emission Aftertreatment Device Testing Under Representative Engine Exhaust Conditions",
+                "url": "https://doi.org/10.1115/icef2024-141651",
+                "year": 2024,
+                "impact_score": 1,
+                "abstract": "Abstract\n               The continued development of aftertreatment devices has been critical in reducing engine tailpipe emissions and meeting ever-evolving regulatory standards. Initial phases of catalytic aftertreatment device evaluation often occur at physically scaled-down conditions, typically using laboratory benchtop reactors to test synthesized catalysts that are coated on mini-cores with flow rates of less than 10 SLPM evaluated and often in the range of 0.1\u20131 SLPM. These flows are often generated artificially using bottled gases and heaters, which do not reflect the conditions that occur under real engine operation. This reduced-scale approach is driven by cost and time constraints, as full-scale device testing requires more catalyst material and production time. Real multicylinder engines produce exhaust flows several orders of magnitude greater than what occurs on the benchtop, with numbers ranging from 1000 to &amp;gt; 10,000 SLPM in typical on-road automotive applications. An intermediary scale approach that can bridge this flowrate chasm is necessary for the efficient rapid prototyping of novel catalytic reactions for aftertreatment applications. This manuscript focuses on validating a variably scaled testbed for catalyst testing that aims to eliminate barriers between cost-effective small-scale testing and realistic full-scale implementations. This study builds on a previous work incorporating a slip-stream approach driven by a venturi-ejector to route flow through a secondary branch containing the catalyst. The current investigation specifically focuses on improving the system\u2019s overall flexibility in terms of accommodating new aftertreatment devices and operating conditions, as well as reducing required auxiliary instrumentation. Differences between the previous iteration of the system are detailed and discussed, as well as recommendations for further improvements to the system. Engine operating parameters such as intake pressure, equivalence ratio, spark timing, compression ratio, and ejector motive pressure are utilized to create the required catalyst inlet temperature, flows, and species concentration for evaluation. The system is tested using a blank catalyst for verifying composition across sampling locations, as well as to generate an operational emissions space for determining the system\u2019s ability to be utilized for intermediate-scale catalyst testing. Initial results show the system\u2019s repeatability and lack of species conversion with an inert monolith to be sufficient for eventually deploying a production catalyst and determining conversion efficiency."
+            },
+            {
+                "title": "Exhaust gas aftertreatment system layout for hydrogen internal combustion engines",
+                "url": "https://doi.org/10.1007/978-3-658-44740-3_17",
+                "year": 2024,
+                "impact_score": 1,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            }
+        ],
+        "Thermal Efficiency": [
+            {
+                "title": "Design and optimal coolant flow rate analysis of an annular water-cooled automotive exhaust-based thermoelectric generator",
+                "url": "https://doi.org/10.1016/j.csite.2024.104256",
+                "year": 2024,
+                "impact_score": 14,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Exhaust Gas Aftertreatment for Methanol Dual-fuel Engines",
+                "url": "https://doi.org/10.1007/s38313-025-2040-7",
+                "year": null,
+                "impact_score": 1,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            },
+            {
+                "title": "Innovative engine test bench set-up for testing of exhaust gas aftertreatment and detailed gas species analysis for CNG-SI-operation",
+                "url": "https://doi.org/10.1007/s41104-024-00140-8",
+                "year": null,
+                "impact_score": 1,
+                "abstract": "AbstractFor an efficient reduction of methane slip, a precise understanding of exhaust gas after treatment under real conditions is essential. Since it is not possible to produce catalytic converters in near-series geometry on a laboratory scale, it is necessary to resort to significantly smaller sample catalysts. Therefore, an engine test bench was designed to ensure real operating conditions for such samples with the help of space velocity and temperature control. A comparison between the actual and reference values of the space velocity results in a small deviation of 0.1% on average. Furthermore, the pressure conditions at the catalyst have been measured showing a propagation of pressure oscillations from the engine outlet which in combination with the space velocity regulation show that real conditions could be applied to the catalyst sample. Subsequently, the exhaust gas concentrations were monitored with a Fourier transform infrared spectrometer. The catalyst material used is PdO on Al<jats:sub>2</jats:sub>O<jats:sub>3</jats:sub>, common for methane oxidation. The measurements show that the CH<jats:sub>4</jats:sub> conversion is higher under lean conditions, but is below complete conversion. In a final comparison between purely stoichiometric operation and dithering, the course of the CH<jats:sub>4</jats:sub> conversion rate over the test period is examined more closely. In addition to sampling pre- and post-catalyst, the exhaust gas composition is measured spatially resolved within a catalyst channel using special measurement technology. In the temporal course of the CH<jats:sub>4</jats:sub> emissions, a stabilizing effect due to the change of the operating mode can be seen, showing that dithering seems to prevent further deactivation."
+            },
+            {
+                "title": "Demonstration of Scaled Flowrate Testbed for Emission Aftertreatment Device Testing Under Representative Engine Exhaust Conditions",
+                "url": "https://doi.org/10.1115/icef2024-141651",
+                "year": 2024,
+                "impact_score": 1,
+                "abstract": "Abstract\n               The continued development of aftertreatment devices has been critical in reducing engine tailpipe emissions and meeting ever-evolving regulatory standards. Initial phases of catalytic aftertreatment device evaluation often occur at physically scaled-down conditions, typically using laboratory benchtop reactors to test synthesized catalysts that are coated on mini-cores with flow rates of less than 10 SLPM evaluated and often in the range of 0.1\u20131 SLPM. These flows are often generated artificially using bottled gases and heaters, which do not reflect the conditions that occur under real engine operation. This reduced-scale approach is driven by cost and time constraints, as full-scale device testing requires more catalyst material and production time. Real multicylinder engines produce exhaust flows several orders of magnitude greater than what occurs on the benchtop, with numbers ranging from 1000 to &amp;gt; 10,000 SLPM in typical on-road automotive applications. An intermediary scale approach that can bridge this flowrate chasm is necessary for the efficient rapid prototyping of novel catalytic reactions for aftertreatment applications. This manuscript focuses on validating a variably scaled testbed for catalyst testing that aims to eliminate barriers between cost-effective small-scale testing and realistic full-scale implementations. This study builds on a previous work incorporating a slip-stream approach driven by a venturi-ejector to route flow through a secondary branch containing the catalyst. The current investigation specifically focuses on improving the system\u2019s overall flexibility in terms of accommodating new aftertreatment devices and operating conditions, as well as reducing required auxiliary instrumentation. Differences between the previous iteration of the system are detailed and discussed, as well as recommendations for further improvements to the system. Engine operating parameters such as intake pressure, equivalence ratio, spark timing, compression ratio, and ejector motive pressure are utilized to create the required catalyst inlet temperature, flows, and species concentration for evaluation. The system is tested using a blank catalyst for verifying composition across sampling locations, as well as to generate an operational emissions space for determining the system\u2019s ability to be utilized for intermediate-scale catalyst testing. Initial results show the system\u2019s repeatability and lack of species conversion with an inert monolith to be sufficient for eventually deploying a production catalyst and determining conversion efficiency."
+            },
+            {
+                "title": "Data-Driven Approach to Estimating Soot Distribution Inside Catalytic Filters in Automotive Exhaust Gas Aftertreatment",
+                "url": "https://doi.org/10.21495/em2024-154",
+                "year": 2024,
+                "impact_score": 0,
+                "abstract": "Abstract not provided by publisher. Check URL for details."
+            }
+        ]
+    }
+}

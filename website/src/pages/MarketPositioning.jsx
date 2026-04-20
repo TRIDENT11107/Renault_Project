@@ -394,12 +394,141 @@ const inferPowertrainFromCardekho = (row) => {
 
 const hpToKw = (horsepower) => (Number.isFinite(horsepower) ? Number((horsepower * 0.7457).toFixed(1)) : null);
 
+const normalizeVehicleText = (value = '') =>
+  String(value)
+    .toLowerCase()
+    .replace(/\b20\d{2}(?:-\d{2,4})?\b/g, ' ')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+const scoreModelMatch = (left = '', right = '') => {
+  if (!left || !right) return 0;
+  if (left === right) return 10;
+  if (left.includes(right) || right.includes(left)) return 8;
+
+  const leftTokens = left.split(' ').filter((token) => token.length > 2);
+  const rightTokens = new Set(right.split(' ').filter((token) => token.length > 2));
+  return leftTokens.filter((token) => rightTokens.has(token)).length;
+};
+
+const BENCHMARK_SPEC_ROWS = Object.entries(MARKET_DATA).flatMap(([powertrain, rows]) =>
+  rows.map((row) => ({
+    ...row,
+    powertrain,
+    normalizedBrand: normalizeVehicleText(row.brand),
+    normalizedModel: normalizeVehicleText(row.model),
+  })),
+);
+
+const findBenchmarkSpec = ({ brand, model, powertrain }) => {
+  const normalizedBrand = normalizeVehicleText(brand);
+  const normalizedModel = normalizeVehicleText(model);
+
+  const matches = BENCHMARK_SPEC_ROWS
+    .filter(
+      (row) =>
+        row.powertrain === powertrain &&
+        row.normalizedBrand === normalizedBrand,
+    )
+    .map((row) => ({
+      ...row,
+      score: scoreModelMatch(normalizedModel, row.normalizedModel),
+    }))
+    .filter((row) => row.score > 0)
+    .sort((a, b) => b.score - a.score);
+
+  return matches[0] || null;
+};
+
+const inferSupplementalRange = ({ powertrain, model, variant, batteryKWh, benchmarkSpec }) => {
+  if (benchmarkSpec?.range && benchmarkSpec.range !== 'N/A') {
+    return benchmarkSpec.range;
+  }
+
+  const text = normalizeVehicleText(`${model} ${variant}`);
+
+  if (powertrain === 'HEV') {
+    if (/hyryder|grand vitara/.test(text)) return '700+ km (combined)';
+    if (/city/.test(text) && /hev/.test(text)) return '650+ km (combined)';
+  }
+
+  if (powertrain === 'EV') {
+    if (/punch ev/.test(text)) return Number(batteryKWh) >= 35 ? '421 km' : '315 km';
+    if (/xuv400/.test(text)) return Number(batteryKWh) >= 39 ? '456 km' : '375 km';
+    if (/zs ev/.test(text)) return '461 km';
+    if (/ioniq 5/.test(text)) return '631 km';
+    if (/seal/.test(text)) {
+      if (/performance/.test(text)) return '580 km';
+      if (/premium/.test(text)) return '650 km';
+      return '510 km';
+    }
+  }
+
+  return 'N/A';
+};
+
+const inferSupplementalMileage = ({ powertrain, model, variant, benchmarkSpec }) => {
+  if (benchmarkSpec?.mileage && benchmarkSpec.mileage !== 'N/A') {
+    return benchmarkSpec.mileage;
+  }
+
+  const text = normalizeVehicleText(`${model} ${variant}`);
+
+  if (powertrain === 'HEV') {
+    if (/hyryder|grand vitara/.test(text)) return '27.9 km/l';
+    if (/city/.test(text) && /hev/.test(text)) return '26.5 km/l';
+  }
+
+  return 'N/A';
+};
+
+const resolveSupplementalCarSpecs = ({ row, powertrain, power, batteryKWh }) => {
+  const brand = row['Brand'] || 'Unknown';
+  const model = row['Model'] || '';
+  const variant = row['Variant'] || '';
+  const benchmarkSpec = findBenchmarkSpec({ brand, model, powertrain });
+
+  const resolvedBatteryKWh =
+    Number.isFinite(Number(batteryKWh)) && Number(batteryKWh) > 0
+      ? Number(batteryKWh)
+      : Number(benchmarkSpec?.batteryKWh) > 0
+        ? Number(benchmarkSpec.batteryKWh)
+        : null;
+
+  const resolvedEMotorPower =
+    Number(benchmarkSpec?.eMotorPower) > 0
+      ? Number(benchmarkSpec.eMotorPower)
+      : powertrain === 'EV'
+        ? hpToKw(power)
+        : null;
+
+  return {
+    batteryKWh: resolvedBatteryKWh,
+    eMotorPower: resolvedEMotorPower,
+    mileage: inferSupplementalMileage({ powertrain, model, variant, benchmarkSpec }),
+    range: inferSupplementalRange({
+      powertrain,
+      model,
+      variant,
+      batteryKWh: resolvedBatteryKWh,
+      benchmarkSpec,
+    }),
+  };
+};
+
 const mapCardekhoRowsToMarketRows = (rows) =>
   rows
     .map((row) => {
       const powertrain = inferPowertrainFromCardekho(row);
       const power = parsePowerFromText(row['Max Power']);
       const batteryKWh = parseBatteryKwhFromRow(row);
+      const supplementalSpecs = resolveSupplementalCarSpecs({
+        row,
+        powertrain,
+        power,
+        batteryKWh,
+      });
       const model = [row['Model'], row['Variant']]
         .filter(Boolean)
         .join(' ')
@@ -414,10 +543,10 @@ const mapCardekhoRowsToMarketRows = (rows) =>
         technology: row['Engine Type'] || row['Transmission Type'] || row['Gearbox'] || 'N/A',
         power,
         torque: parseTorqueFromText(row['Max Torque']),
-        mileage: 'N/A',
-        batteryKWh,
-        eMotorPower: powertrain === 'EV' ? hpToKw(power) : null,
-        range: 'N/A',
+        mileage: supplementalSpecs.mileage,
+        batteryKWh: supplementalSpecs.batteryKWh,
+        eMotorPower: supplementalSpecs.eMotorPower,
+        range: supplementalSpecs.range,
         launchStatus: 'Existing Market',
         source: 'CarDekho',
         powertrain,

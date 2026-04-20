@@ -36,8 +36,14 @@ const FUEL_SERIES = [
   { key: 'EV', label: 'EV', color: '#EF4444' },
   { key: 'Hybrid', label: 'Hybrid', color: '#14B8A6' }
 ];
+const MILESTONE_YEARS = new Set([2023, 2025, 2026, 2030]);
 
 const formatNumber = (value) => Number(value || 0).toLocaleString('en-IN');
+const formatCompactNumber = (value) =>
+  new Intl.NumberFormat('en-IN', {
+    notation: 'compact',
+    maximumFractionDigits: 1,
+  }).format(Number(value || 0));
 const formatYear = (value) => String(Math.round(Number(value || 0)));
 const formatPercent = (value) => `${Number(value || 0).toFixed(1)}%`;
 const toPercent = (value, total) => (total > 0 ? (Number(value || 0) / total) * 100 : 0);
@@ -307,6 +313,22 @@ const TooltipContent = ({ active, payload, label }) => {
   );
 };
 
+const createMilestoneDot = (color) => ({ cx, cy, payload }) => {
+  const yearValue = Number(payload?.Year);
+  const roundedYear = Math.round(yearValue);
+
+  if (!Number.isFinite(yearValue) || Math.abs(yearValue - roundedYear) > 0.001 || !MILESTONE_YEARS.has(roundedYear)) {
+    return null;
+  }
+
+  return (
+    <g>
+      <circle cx={cx} cy={cy} r={6} fill="#FFFFFF" fillOpacity="0.94" />
+      <circle cx={cx} cy={cy} r={3.5} fill={color} stroke="#FFFFFF" strokeWidth={1.5} />
+    </g>
+  );
+};
+
 const MarketOverview = () => {
   const historicalData = useMemo(() => parseFuelMixCsv(energyMixCsv), []);
   const forecastData = useMemo(() => parseFuelMixCsv(forecastResultsCsv), []);
@@ -399,19 +421,13 @@ const MarketOverview = () => {
   const pieCharts = useMemo(() => {
     const historicalFolderRows = energyMixFolderRows.filter((row) => row.Year < 2026);
     const historicalFiveYears = historicalFolderRows.slice(-5);
-    const graphForecastRows = forecastData.filter((row) => row.Year >= 2026 && row.Year <= 2028);
     const historicalRange =
       historicalFiveYears.length > 0
         ? `${historicalFiveYears[0].Year}-${historicalFiveYears[historicalFiveYears.length - 1].Year}`
         : 'No historical rows';
-    const forecastRange =
-      graphForecastRows.length > 0
-        ? `${graphForecastRows[0].Year}-${graphForecastRows[graphForecastRows.length - 1].Year}`
-        : 'No forecast rows';
     const oemWeightedTotals = buildOemWeightedTotals(historicalFiveYears, topManufacturerSales);
     const historicalSummary = buildSliceDataFromRows(historicalFiveYears);
     const oemSummary = buildSliceDataFromTotals(oemWeightedTotals);
-    const forecastSummary = buildSliceDataFromRows(graphForecastRows);
 
     return [
       {
@@ -427,16 +443,25 @@ const MarketOverview = () => {
         subtitle: `OEM-weighted folder summary (${historicalRange})`,
         clickable: oemSummary.slices.length > 0,
         ...oemSummary
-      },
-      {
-        id: 'forecast-three-years',
-        title: '3 Year Forecast',
-        subtitle: `Main graph forecast summary (${forecastRange})`,
-        clickable: forecastSummary.slices.length > 0,
-        ...forecastSummary
       }
     ];
   }, [energyMixFolderRows, forecastData, topManufacturerSales]);
+
+  const consolidationGraphData = useMemo(
+    () =>
+      energyMixData.map((row) => ({
+        Year: row.Year,
+        Total: Number(row.Total || 0),
+        fill: row.Year <= 2025 ? '#16A34A' : '#14B8A6',
+        phase: row.Year <= 2025 ? 'Historical' : 'Forecast',
+      })),
+    [energyMixData],
+  );
+
+  const consolidationTotal = useMemo(
+    () => consolidationGraphData.reduce((sum, row) => sum + Number(row.Total || 0), 0),
+    [consolidationGraphData],
+  );
 
   const selectedRowShare = useMemo(() => {
     const total = Number(selectedRow?.Total || 0);
@@ -601,7 +626,7 @@ const MarketOverview = () => {
                       fill={fuel.color}
                       fillOpacity={0.78}
                       isAnimationActive={false}
-                      dot={false}
+                      dot={createMilestoneDot(fuel.color)}
                       activeDot={false}
                     />
                   ))}
@@ -679,7 +704,7 @@ const MarketOverview = () => {
       <Card>
         <CardHeader>
           <CardTitle>Energy Sales Mix - Pie Charts</CardTitle>
-          <CardDescription>Three summary pies built from the CSV files in the Energy mix folder</CardDescription>
+          <CardDescription>Historical mix summaries with a consolidated yearly energy sales trend</CardDescription>
         </CardHeader>
         <CardContent>
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
@@ -736,6 +761,57 @@ const MarketOverview = () => {
                 </div>
               </div>
             ))}
+
+            <div className="rounded-xl border border-border bg-card px-4 py-4">
+              <div className="flex items-center justify-between mb-3 gap-3">
+                <h3 className="text-base font-semibold text-foreground">Energy Sales Consolidation</h3>
+                <span className="text-xs text-muted-foreground">Total: {formatNumber(consolidationTotal)}</span>
+              </div>
+              <p className="text-[11px] text-muted-foreground mb-3">
+                Consolidated yearly energy sales across historical and forecast rows.
+              </p>
+
+              <div className="h-[220px]">
+                <ResponsiveContainer width="100%" height="100%">
+                  <BarChart data={consolidationGraphData} margin={{ left: 0, right: 8, top: 8, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#E2E8F0" vertical={false} />
+                    <XAxis
+                      dataKey="Year"
+                      tick={{ fill: '#64748B', fontSize: 12 }}
+                      tickFormatter={formatYear}
+                    />
+                    <YAxis
+                      width={64}
+                      tick={{ fill: '#64748B', fontSize: 12 }}
+                      tickFormatter={formatCompactNumber}
+                    />
+                    <Tooltip
+                      formatter={(value, _name, item) => [formatNumber(value), 'Total sales']}
+                      labelFormatter={(label, payload) => {
+                        const point = payload?.[0]?.payload;
+                        return point ? `${label} | ${point.phase}` : label;
+                      }}
+                    />
+                    <Bar dataKey="Total" radius={[8, 8, 0, 0]}>
+                      {consolidationGraphData.map((entry) => (
+                        <Cell key={`consolidation-${entry.Year}`} fill={entry.fill} />
+                      ))}
+                    </Bar>
+                  </BarChart>
+                </ResponsiveContainer>
+              </div>
+
+              <div className="mt-3 flex flex-wrap gap-3 text-xs text-muted-foreground">
+                <span className="inline-flex items-center gap-2">
+                  <span className="h-2.5 w-2.5 rounded-full bg-[#16A34A]" />
+                  Historical
+                </span>
+                <span className="inline-flex items-center gap-2">
+                  <span className="h-2.5 w-2.5 rounded-full bg-[#14B8A6]" />
+                  Forecast
+                </span>
+              </div>
+            </div>
           </div>
         </CardContent>
       </Card>
