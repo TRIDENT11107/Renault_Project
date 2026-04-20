@@ -172,6 +172,36 @@ const parseFuelMixCsv = (csvText = '') => {
     .sort((a, b) => a.Year - b.Year);
 };
 
+const normalizeForecastRows = (historicalRows = [], forecastRows = []) => {
+  if (!historicalRows.length || !forecastRows.length) {
+    return forecastRows;
+  }
+
+  const anchorHistoricalRow = historicalRows[historicalRows.length - 1];
+  const firstForecastRow = forecastRows[0];
+  const anchorTotal = Number(anchorHistoricalRow?.Total || 0);
+  const firstForecastTotal = Number(firstForecastRow?.Total || 0);
+
+  if (!anchorTotal || !firstForecastTotal) {
+    return forecastRows;
+  }
+
+  const scaleFactor = anchorTotal / firstForecastTotal;
+
+  return forecastRows.map((row) => {
+    const scaledRow = FUEL_SERIES.reduce(
+      (acc, fuel) => {
+        acc[fuel.key] = Math.round(Number(row[fuel.key] || 0) * scaleFactor);
+        return acc;
+      },
+      { Year: row.Year }
+    );
+
+    scaledRow.Total = FUEL_SERIES.reduce((sum, fuel) => sum + Number(scaledRow[fuel.key] || 0), 0);
+    return scaledRow;
+  });
+};
+
 const mergeFuelMixRows = (...collections) => {
   const byYear = new Map();
   for (const collection of collections) {
@@ -331,7 +361,8 @@ const createMilestoneDot = (color) => ({ cx, cy, payload }) => {
 
 const MarketOverview = () => {
   const historicalData = useMemo(() => parseFuelMixCsv(energyMixCsv), []);
-  const forecastData = useMemo(() => parseFuelMixCsv(forecastResultsCsv), []);
+  const rawForecastData = useMemo(() => parseFuelMixCsv(forecastResultsCsv), []);
+  const forecastData = useMemo(() => normalizeForecastRows(historicalData, rawForecastData), [historicalData, rawForecastData]);
   const energyMixData = useMemo(() => mergeFuelMixRows(historicalData, forecastData), [forecastData, historicalData]);
   const topManufacturerSales = useMemo(() => parseManufacturerSalesCsv(manufacturerSalesCsv), []);
   const energyMixFolderRows = useMemo(
@@ -445,14 +476,14 @@ const MarketOverview = () => {
         ...oemSummary
       }
     ];
-  }, [energyMixFolderRows, forecastData, topManufacturerSales]);
+  }, [energyMixFolderRows, topManufacturerSales]);
 
   const consolidationGraphData = useMemo(
     () =>
       energyMixData.map((row) => ({
         Year: row.Year,
         Total: Number(row.Total || 0),
-        fill: row.Year <= 2025 ? '#16A34A' : '#14B8A6',
+        fill: row.Year <= 2025 ? '#1FA856' : '#1FB7B0',
         phase: row.Year <= 2025 ? 'Historical' : 'Forecast',
       })),
     [energyMixData],
@@ -675,39 +706,104 @@ const MarketOverview = () => {
           </CardContent>
         </Card>
 
-        <Card>
-          <CardHeader>
-            <CardTitle>{selectedYear} Breakdown</CardTitle>
-            <CardDescription>Fuel share (%) for the selected year</CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-3">
-            {FUEL_SERIES.map((fuel) => (
-              <div key={fuel.key} className="flex items-center justify-between rounded-lg border border-border bg-secondary/70 px-3 py-2">
-                <span className="inline-flex items-center gap-2 text-sm text-foreground">
-                  <span className="h-2.5 w-2.5 rounded-sm" style={{ backgroundColor: fuel.color }} />
-                  {fuel.label}
-                </span>
-                <span className="text-sm font-semibold text-foreground">{formatPercent(selectedRowShare[fuel.key])}</span>
-              </div>
-            ))}
+        <div className="space-y-6">
+          <Card>
+            <CardHeader>
+              <CardTitle>{selectedYear} Breakdown</CardTitle>
+              <CardDescription>Fuel share (%) for the selected year</CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-3">
+              {FUEL_SERIES.map((fuel) => (
+                <div key={fuel.key} className="flex items-center justify-between rounded-lg border border-border bg-secondary/70 px-3 py-2">
+                  <span className="inline-flex items-center gap-2 text-sm text-foreground">
+                    <span className="h-2.5 w-2.5 rounded-sm" style={{ backgroundColor: fuel.color }} />
+                    {fuel.label}
+                  </span>
+                  <span className="text-sm font-semibold text-foreground">{formatPercent(selectedRowShare[fuel.key])}</span>
+                </div>
+              ))}
 
-            <div className="mt-4 rounded-lg border border-border bg-card px-3 py-3">
-              <div className="flex items-center justify-between">
-                <span className="text-sm font-medium text-muted-foreground">Total</span>
-                <span className="text-base font-bold text-foreground">{formatNumber(selectedRow.Total)}</span>
+              <div className="mt-4 rounded-lg border border-border bg-card px-3 py-3">
+                <div className="flex items-center justify-between">
+                  <span className="text-sm font-medium text-muted-foreground">Total</span>
+                  <span className="text-base font-bold text-foreground">{formatNumber(selectedRow.Total)}</span>
+                </div>
               </div>
-            </div>
-          </CardContent>
-        </Card>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader className="pb-4">
+              <div className="flex items-start justify-between gap-4">
+                <div className="space-y-2">
+                  <CardTitle>Energy Sales Consolidation</CardTitle>
+                  <CardDescription>
+                    Forecast totals are normalized to the 2025 baseline for a like-for-like yearly view.
+                  </CardDescription>
+                </div>
+                <div className="text-right">
+                  <p className="text-xs uppercase tracking-[0.24em] text-muted-foreground">Total</p>
+                  <p className="text-xl font-semibold text-foreground">{formatNumber(consolidationTotal)}</p>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="h-[260px]">
+                <ResponsiveContainer width="100%" height="100%">
+                  <BarChart data={consolidationGraphData} margin={{ left: 4, right: 12, top: 8, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#D9E3F0" vertical={false} />
+                    <XAxis
+                      dataKey="Year"
+                      tick={{ fill: '#64748B', fontSize: 12 }}
+                      tickFormatter={formatYear}
+                      axisLine={{ stroke: '#94A3B8' }}
+                      tickLine={{ stroke: '#94A3B8' }}
+                    />
+                    <YAxis
+                      width={64}
+                      tick={{ fill: '#64748B', fontSize: 12 }}
+                      tickFormatter={formatCompactNumber}
+                      axisLine={{ stroke: '#94A3B8' }}
+                      tickLine={{ stroke: '#94A3B8' }}
+                    />
+                    <Tooltip
+                      formatter={(value) => [formatNumber(value), 'Total sales']}
+                      labelFormatter={(label, payload) => {
+                        const point = payload?.[0]?.payload;
+                        return point ? `${label} | ${point.phase}` : label;
+                      }}
+                    />
+                    <Bar dataKey="Total" radius={[10, 10, 0, 0]} maxBarSize={34}>
+                      {consolidationGraphData.map((entry) => (
+                        <Cell key={`consolidation-${entry.Year}`} fill={entry.fill} />
+                      ))}
+                    </Bar>
+                  </BarChart>
+                </ResponsiveContainer>
+              </div>
+
+              <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
+                <span className="inline-flex items-center gap-2">
+                  <span className="h-3 w-3 rounded-full bg-[#1FA856]" />
+                  Historical
+                </span>
+                <span className="inline-flex items-center gap-2">
+                  <span className="h-3 w-3 rounded-full bg-[#1FB7B0]" />
+                  Forecast
+                </span>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
       </div>
 
       <Card>
         <CardHeader>
           <CardTitle>Energy Sales Mix - Pie Charts</CardTitle>
-          <CardDescription>Historical mix summaries with a consolidated yearly energy sales trend</CardDescription>
+          <CardDescription>Historical mix summaries for folder and OEM-weighted views</CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {pieCharts.map((chart) => (
               <div key={chart.id} className="rounded-xl border border-border bg-card px-4 py-4">
                 <div className="flex items-center justify-between mb-3">
@@ -761,57 +857,6 @@ const MarketOverview = () => {
                 </div>
               </div>
             ))}
-
-            <div className="rounded-xl border border-border bg-card px-4 py-4">
-              <div className="flex items-center justify-between mb-3 gap-3">
-                <h3 className="text-base font-semibold text-foreground">Energy Sales Consolidation</h3>
-                <span className="text-xs text-muted-foreground">Total: {formatNumber(consolidationTotal)}</span>
-              </div>
-              <p className="text-[11px] text-muted-foreground mb-3">
-                Consolidated yearly energy sales across historical and forecast rows.
-              </p>
-
-              <div className="h-[220px]">
-                <ResponsiveContainer width="100%" height="100%">
-                  <BarChart data={consolidationGraphData} margin={{ left: 0, right: 8, top: 8, bottom: 0 }}>
-                    <CartesianGrid strokeDasharray="3 3" stroke="#E2E8F0" vertical={false} />
-                    <XAxis
-                      dataKey="Year"
-                      tick={{ fill: '#64748B', fontSize: 12 }}
-                      tickFormatter={formatYear}
-                    />
-                    <YAxis
-                      width={64}
-                      tick={{ fill: '#64748B', fontSize: 12 }}
-                      tickFormatter={formatCompactNumber}
-                    />
-                    <Tooltip
-                      formatter={(value, _name, item) => [formatNumber(value), 'Total sales']}
-                      labelFormatter={(label, payload) => {
-                        const point = payload?.[0]?.payload;
-                        return point ? `${label} | ${point.phase}` : label;
-                      }}
-                    />
-                    <Bar dataKey="Total" radius={[8, 8, 0, 0]}>
-                      {consolidationGraphData.map((entry) => (
-                        <Cell key={`consolidation-${entry.Year}`} fill={entry.fill} />
-                      ))}
-                    </Bar>
-                  </BarChart>
-                </ResponsiveContainer>
-              </div>
-
-              <div className="mt-3 flex flex-wrap gap-3 text-xs text-muted-foreground">
-                <span className="inline-flex items-center gap-2">
-                  <span className="h-2.5 w-2.5 rounded-full bg-[#16A34A]" />
-                  Historical
-                </span>
-                <span className="inline-flex items-center gap-2">
-                  <span className="h-2.5 w-2.5 rounded-full bg-[#14B8A6]" />
-                  Forecast
-                </span>
-              </div>
-            </div>
           </div>
         </CardContent>
       </Card>
